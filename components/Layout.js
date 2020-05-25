@@ -21,7 +21,8 @@ const Layout = props => {
 
       <Header appTitle={appTitle} />
       <div className="Content">{props.children}</div>
-      <NavBar navButtons={navButtons} />
+      <NavBar/>
+      {/* <NavBar navButtons={navButtons} /> */}
     </div>
   );
 };
