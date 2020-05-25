@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Layout from \"../components/Layout\";","map":{"version":3,"sources":["D:/archive/next/whatabyte/pages/index.js"],"names":["Layout"],"mappings":"AAAA,OAAOA,MAAP,MAAmB,sBAAnB","sourcesContent":["import Layout from \"../components/Layout\";\r\n"]},"metadata":{},"sourceType":"module"}
