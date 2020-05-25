@@ -1,12 +1,10 @@
 
 import Head from "next/head";
 import Header from "./Header";
-import NavBar from "./NavBar";
-
 import "./Layout.scss";
 import "./index.scss";
 
-import navButtons from "../config/buttons";
+
 
 const Layout = props => {
   const appTitle = `> VAR`;
@@ -40,16 +38,16 @@ const Layout = props => {
         <section class="content">
         {props.children}        
         </section>
-        <aside class="sidebar">
+        {/* <aside class="sidebar">
             Sidebar                
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sumenda potius quam expetenda. Nihil opus est exemplis hoc facere longius. At Zeno eum non beatum modo, sed etiam divitem dicere ausus est. Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Itaque quantum adiit periculum!
             </p>
-        </aside>
+        </aside> */}
 
     </div>
     <footer class="footer">
-    <NavBar navButtons={navButtons} />
+    
     </footer>
 </main>
   );
