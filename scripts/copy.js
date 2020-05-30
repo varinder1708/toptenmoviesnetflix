@@ -16,30 +16,28 @@ const request = require('request');
 
     fs.readFile('./net.html', 'utf8', function(err, contents) {
       var myfile=contents;
+      var movielist=[];
       var res = myfile.match('id=\"release-calendar-container\">(.*?)</ul>');
-      console.log("----------------------------------------------");
+      selectContentbyIdInUl('release-calendar-container',contents);
       var moviesarray=res[1].split('<li class="date-header">');
       console.log(moviesarray.length)
-      var movielist=[];
       moviesarray.forEach(function(val,index) { 
         var obj={}
         var  pushtoarray=true;
-
-        var moviename=val.match('<\s*h5[^>]*>(.*?)<\s*/\s*h5>');
+        var moviename= selectTaginString('h5',val);
+        
         try{ obj.name=moviename[1]; 
         }catch(e){console.log(e);pushtoarray=false;}
-        
-        
-        var moviedesc=val.match('<\s*p[^>]*>(.*?)<\s*/\s*p>');
+     
+        var moviedesc=selectTaginString('p',val);
         try{ obj.desc=moviedesc[1];
           }catch(e){console.log(e);pushtoarray=false;}
-        
-          var type=val.match('<\s*b[^>]*>(.*?)<\s*/\s*b>');
+          
+          var type=selectTaginString('b',val);
           try{ obj.type=type[1].replace("Type: ","");
             }catch(e){console.log(e);pushtoarray=false;}
-          
 
-          var imagetag=val.match('<\s*noscript[^>]*>(.*?)<\s*/\s*noscript>');
+          var imagetag=selectTaginString('noscript',val);
           try{
           var remoteimage=getTagAttribute(imagetag[1],'src').replace("//","https://");
           var imagename=remoteimage.substring(remoteimage.lastIndexOf("/")+1,remoteimage.length);
@@ -68,6 +66,14 @@ const request = require('request');
     });
 
  });
+ function selectTaginString(tag,contents)
+        {
+          return contents.match('<\s*'+tag+'[^>]*>(.*?)<\s*/\s*'+tag+'>');
+        }
+ function selectContentbyIdInUl(id,contents)
+      {
+        return contents.match('id=\"'+id+'\">(.*?)</ul>');
+      }
  function saveImageToDisk(url, localPath) {var fullUrl = url;
   var file = fs.createWriteStream(localPath);
   var request = https.get(url, function(response) {
@@ -85,17 +91,3 @@ const request = require('request');
       return '';
   }
 }
-// const lineReader = require('line-reader');
-
-// lineReader.eachLine('net.html', function(line) {
-//    var abc=line;
-//     console.log(abc);console.log("\n")
-// });
-// lineReader.open('./net.html', function(reader) {console.log(reader);
-//     if (reader.hasNextLine()) {
-//         reader.nextLine(function(line) {
-//             console.log(line);
-//         });
-//     }
-// });
-
