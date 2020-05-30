@@ -23,22 +23,31 @@ const request = require('request');
       var movielist=[];
       moviesarray.forEach(function(val,index) { 
         var obj={}
-        var moviename=val.match('<\s*h5[^>]*>(.*?)<\s*/\s*h5>');
         var  pushtoarray=true;
+
+        var moviename=val.match('<\s*h5[^>]*>(.*?)<\s*/\s*h5>');
         try{ obj.name=moviename[1]; 
         }catch(e){console.log(e);pushtoarray=false;}
+        
+        
         var moviedesc=val.match('<\s*p[^>]*>(.*?)<\s*/\s*p>');
         try{ obj.desc=moviedesc[1];
           }catch(e){console.log(e);pushtoarray=false;}
-        var imagetag=val.match('<\s*noscript[^>]*>(.*?)<\s*/\s*noscript>');
         
-         try{
+          var type=val.match('<\s*b[^>]*>(.*?)<\s*/\s*b>');
+          try{ obj.type=type[1].replace("Type: ","");
+            }catch(e){console.log(e);pushtoarray=false;}
+          
+
+          var imagetag=val.match('<\s*noscript[^>]*>(.*?)<\s*/\s*noscript>');
+          try{
           var remoteimage=getTagAttribute(imagetag[1],'src').replace("//","https://");
           var imagename=remoteimage.substring(remoteimage.lastIndexOf("/")+1,remoteimage.length);
           saveImageToDisk(remoteimage, `../public/images/${imagename}`);
         obj.image= imagename;
         }catch(e){console.log(e)}
         
+
         if(pushtoarray==true){movielist.push(obj);}
         
      }) 

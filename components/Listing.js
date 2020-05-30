@@ -3,7 +3,8 @@ const Listing = (props) => (
     <ul>
     {props.data.map((post) => (
       <li>
-         <span>{post.name}</span>
+         <span><strong>{post.name}</strong></span>
+         <p>{post.type}</p>
          <p>{post.desc}</p>
         <p> <img  src={`/images/${post.image}`} /></p>
       </li>
