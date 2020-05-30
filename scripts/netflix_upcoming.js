@@ -5,7 +5,11 @@ const request = require('request');
 
 var stream = request('https://www.whats-on-netflix.com/coming-soon/').pipe(fs.createWriteStream('./net.html'))
 stream.on('finish', function () {
-  fs.readFile('./net.html', 'utf8', function (err, contents) {
+  readfile();
+});
+function readfile() {
+  fs
+    .readFile('./net.html', 'utf8', function (err, contents) {
       var myfile = contents;
       var movielist = [];
       //var res = myfile.match('id=\"release-calendar-container\">(.*?)</ul>');
@@ -64,7 +68,7 @@ stream.on('finish', function () {
       })
 
       var filetext = `export const heading="The Best Netflix Original Shows and Movies Coming in 2020";
-     export const data=${JSON.stringify(movielist)}`;
+   export const data=${JSON.stringify(movielist)}`;
 
       fs.writeFile("../data/upcomingshows", filetext, 'ascii', function (err, data) {
         if (err) {
@@ -76,10 +80,12 @@ stream.on('finish', function () {
       // console.log(moviesarry)
 
     });
-
-});
+}
 function selectTaginString(tag, contents) {
   return contents.match('<\s*' + tag + '[^>]*>(.*?)<\s*/\s*' + tag + '>');
+}
+function selectTaginString_custom(tag, end_tag, contents) {
+  return contents.match('<\s*' + tag + '[^>]*>(.*?)<\s*/\s*' + end_tag + '>');
 }
 function selectContentbyIdInUl(id, contents) {
   return contents.match('id=\"' + id + '\">(.*?)</ul>');
