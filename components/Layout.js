@@ -34,7 +34,7 @@ const Layout = props => {
         </p>
     </section> */}
 
-    <div class="flex-container wrapper">
+    <div class="flex-container wrapper singlecolumn">
         <section class="content">
         {props.children}        
         </section>

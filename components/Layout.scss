@@ -4,7 +4,12 @@
 :before {
 	box-sizing: border-box
 }
-ul{padding-left:0}
+ul{padding-left:0;
+
+
+}
+
+
 html {
 	font-size: 100%
 }
@@ -21,7 +26,10 @@ body {
 	margin: auto;
 	max-width: 75rem
 }
-
+.wrapper.singlecolumn {
+	
+	max-width: 58rem
+}
 aside,
 footer,
 header,

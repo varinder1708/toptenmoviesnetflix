@@ -1,12 +1,13 @@
 import "./Listing.scss";
 const Listing = (props) => (
     <ul>
-    {props.data.map((post) => (
+    {props.data.map((post,i) => (
       <li>
-         <span><strong>{post.name}</strong></span>
-         <p>{post.type}</p>
+         <span><strong>{i+1}.{post.name}</strong></span>
+         <p> <img  src={`/images/${post.image}`} /></p>
+         <p class="type">{post.type} ({post.date})</p>
          <p>{post.desc}</p>
-        <p> <img  src={`/images/${post.image}`} /></p>
+        
       </li>
     ))}
   </ul>  

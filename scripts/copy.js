@@ -17,18 +17,21 @@ const request = require('request');
     fs.readFile('./net.html', 'utf8', function(err, contents) {
       var myfile=contents;
       var movielist=[];
-      var res = myfile.match('id=\"release-calendar-container\">(.*?)</ul>');
-      selectContentbyIdInUl('release-calendar-container',contents);
+      //var res = myfile.match('id=\"release-calendar-container\">(.*?)</ul>');
+      var res =selectContentbyIdInUl('release-calendar-container',contents);
       var moviesarray=res[1].split('<li class="date-header">');
       console.log(moviesarray.length)
       moviesarray.forEach(function(val,index) { 
         var obj={}
         var  pushtoarray=true;
         var moviename= selectTaginString('h5',val);
-        
         try{ obj.name=moviename[1]; 
         }catch(e){console.log(e);pushtoarray=false;}
      
+        var moviedate= selectTaginString('h4',val);
+        try{ obj.date=moviedate[1]; 
+        }catch(e){console.log(e);pushtoarray=false;} 
+
         var moviedesc=selectTaginString('p',val);
         try{ obj.desc=moviedesc[1];
           }catch(e){console.log(e);pushtoarray=false;}
