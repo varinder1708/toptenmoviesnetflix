@@ -1,4 +1,11 @@
 ul {
+    &.threerowlayout
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 	img {
 		max-width: 100%;
 	}

@@ -1,18 +1,18 @@
 // import fs from 'fs' import path from 'path'
 import Head from 'next/head'
-import {data, heading} from '../data/upcomingshows';
+import {data, heading} from '../data/goabeaches';
 
 import Link from "next/link";
 import Layout from "../components/Layout";
 import Heading from "../components/Heading";
 import Listing from "../components/Listing";
 const listing = () => (
-  <Layout layout="singlecolumnlayout">
+  <Layout layout="threecoulumnlayout">
     <Head>
       <title>{heading}</title>
     </Head>
     <Heading title={heading}/>
-    <Listing data={data}/>
+    <Listing data={data} layout="threerowlayout"/>
   </Layout>
 );
 
