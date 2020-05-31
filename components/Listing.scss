@@ -4,7 +4,7 @@ ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 	img {
 		max-width: 100%;
@@ -26,3 +26,13 @@ ul {
 		}
 	}
 }
+@media only screen and (max-width: 600px) {
+    ul{
+        &.threerowlayout
+        {
+        li{flex-basis: 100%;}
+        img{width: 100%;}
+        }
+
+    }
+  }
