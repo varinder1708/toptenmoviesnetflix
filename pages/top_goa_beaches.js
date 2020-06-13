@@ -1,6 +1,6 @@
 // import fs from 'fs' import path from 'path'
 import Head from 'next/head'
-import {data, heading} from '../data/upcomingshows';
+import {data, heading} from '../data/goabeacheswithdesc';
 
 import Link from "next/link";
 import Layout from "../components/Layout";

@@ -12,7 +12,7 @@ const listing = () => (
       <title>{heading}</title>
     </Head>
     <Heading title={heading}/>
-    <Listing data={data} layout="threerowlayout"/>
+    <Listing   data={data} layout="threerowlayout"/>
   </Layout>
 );
 

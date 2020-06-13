@@ -11,7 +11,7 @@ const Listing = (props) => (
             </span>
           )}
           {post.image && (
-            <p>
+            <p class="img">
               <img src={`/images/${post.image}`}/></p>
           )}
           {post.type && (

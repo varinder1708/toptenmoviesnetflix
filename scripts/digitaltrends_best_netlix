@@ -2,19 +2,29 @@
 const fs = require('fs')
 const https = require('https');
 const request = require('request');
+const directreadsource=true;
 
-var stream = request('https://www.whats-on-netflix.com/coming-soon/').pipe(fs.createWriteStream('./net.html'))
+if(directreadsource==true)
+{
+readfile();
+}
+else
+{
+var stream = request('https://www.digitaltrends.com/movies/best-shows-on-netflix/').pipe(fs.createWriteStream('./digitaltrends_best_shows.html'))
 stream.on('finish', function () {
   readfile();
 });
+}
 function readfile() {
   fs
-    .readFile('./net.html', 'utf8', function (err, contents) {
+    .readFile('./digitaltrends_best_shows.html', 'utf8', function (err, contents) {
       var myfile = contents;
+      //console.log(myfile)
       var movielist = [];
-      //var res = myfile.match('id=\"release-calendar-container\">(.*?)</ul>');
-      var res = selectContentbyIdInUl('release-calendar-container', contents);
-      var moviesarray = res[1].split('<li class="date-header">');
+      //var res = selectContentbyClassinDiv('abcdef', contents);
+     // console.log(res)
+      //console.log(res[1])
+      var moviesarray = contents.split('<figure class="aligncenter">');
       console.log(moviesarray.length)
       moviesarray.forEach(function (val, index) {
         var obj = {}
@@ -55,8 +65,8 @@ function readfile() {
         try {
           var remoteimage = getTagAttribute(imagetag[1], 'src').replace("//", "https://");
           var imagename = remoteimage.substring(remoteimage.lastIndexOf("/") + 1, remoteimage.length);
-          saveImageToDisk(remoteimage, `../public/images/upcomingmovies/${imagename}`);
-          obj.image = `upcomingmovies/${imagename}`;
+          saveImageToDisk(remoteimage, `../public/images/${imagename}`);
+          obj.image = imagename;
         } catch (e) {
           console.log(e)
         }
@@ -70,7 +80,7 @@ function readfile() {
       var filetext = `export const heading="The Best Netflix Original Shows and Movies Coming in 2020";
    export const data=${JSON.stringify(movielist)}`;
 
-      fs.writeFile("../data/upcomingshows", filetext, 'ascii', function (err, data) {
+      fs.writeFile("../data/digitaltrends_best_neflix", filetext, 'ascii', function (err, data) {
         if (err) {
           return console.log(err);
         }
@@ -89,6 +99,9 @@ function selectTaginString_custom(tag, end_tag, contents) {
 }
 function selectContentbyIdInUl(id, contents) {
   return contents.match('id=\"' + id + '\">(.*?)</ul>');
+}
+function selectContentbyClassinDiv(id, contents) {
+  return contents.match('class=\"' + id + '\">(.*?)</div>');
 }
 function saveImageToDisk(url, localPath) {
   var fullUrl = url;

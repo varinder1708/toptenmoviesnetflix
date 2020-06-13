@@ -1,0 +1,2 @@
+export const heading="The Best Netflix Original Shows and Movies Coming in 2020";
+   export const data=[]
