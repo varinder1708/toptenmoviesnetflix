@@ -7,13 +7,12 @@ import Layout from "../components/Layout";
 import Heading from "../components/Heading";
 import Listing from "../components/Listing";
 const listing = () => (
-  <Layout>
+  <Layout layout="singlecolumnlayout">
     <Head>
       <title>{heading}</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
     </Head>
     <Heading title={heading}/>
-    <Listing data={data}/>
+    <Listing   data={data}/>
   </Layout>
 );
 
