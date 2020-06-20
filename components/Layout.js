@@ -8,7 +8,7 @@ import "./index.scss";
 
 const Layout = props => {
   const appTitle = `> VAR`;
-
+  const {heading}=props;
   return (
     // <div className="Layout">
     //   <Head>
@@ -24,6 +24,23 @@ const Layout = props => {
     // </div>
     
     <main>
+      <Head>
+<title>{props.heading} | Trishn</title>
+<meta http-equiv="Last-Modified" content="Saturday, 20 June, 2020 07:15:29AM"/>
+<meta name="Last-Modified" content="Saturday, 20 June, 2020 07:15:29AM"/>
+<meta name="Last-Modified-Date" content="Sat, Jun 20, 2020"/>
+<meta name="Last-Modified-Time" content="07.15AM IST"/>
+<meta content={`${heading} from trishn`} name="description"/>
+<meta content={`${heading}`} name="keywords"/>
+<meta content={`${heading} | Trishn`} property="og:title"/>
+<meta content={`${heading}`} property="og:description"/>
+<meta content="Trishn" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="https://trishn.com/" property="og:url"/>
+
+
+
+    </Head>
     <header class="header">
     <Header appTitle={appTitle} />
     </header>
