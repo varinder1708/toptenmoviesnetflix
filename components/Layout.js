@@ -34,7 +34,7 @@ const Layout = props => {
         window.dataLayer = window.dataLayer || [];
         function gtag(){window.dataLayer.push(arguments)}
         gtag("js", new Date());
-        gtag("config", "'UA-170166482-1");
+        gtag("config", "UA-170166482-1");
     `}
 }>
 </script>
