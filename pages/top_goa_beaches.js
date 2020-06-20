@@ -10,6 +10,14 @@ const listing = () => (
   <Layout layout="singlecolumnlayout">
     <Head>
       <title>{heading}</title>
+      <meta content="goa beaches from trishn" name="description"/>
+<meta content="goa beaches,best goa beaches" name="keywords"/>
+<meta content="goa beaches | Trishn" property="og:title"/>
+<meta content="goa beaches" property="og:description"/>
+<meta content="Trishn" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="https://trishn.com/" property="og:url"/>
+
     </Head>
     <Heading title={heading}/>
     <Listing   data={data}/>
