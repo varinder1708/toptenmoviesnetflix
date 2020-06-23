@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import Heading from "../components/Heading";
 import Listing from "../components/Listing";
 const listing = () => (
-  <Layout layout="singlecolumnlayout">
+  <Layout layout="singlecolumnlayout" heading={heading}>
     <Head>
       <title>{heading}</title>
     </Head>
