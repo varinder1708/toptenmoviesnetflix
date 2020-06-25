@@ -19,10 +19,8 @@ const Listing = (props) => (
               ({post.date})</p>
           )}
           {post.desc && (
-            // <span dangerouslySetInnerHTML={{__html: rawMarkup}} />
-            <p dangerouslySetInnerHTML={{__html: post.desc}}/>
-          )}
-
+            <div dangerouslySetInnerHTML={{__html: post.desc}}></div>
+         )}
         </li>
       ))}
   </ul>
