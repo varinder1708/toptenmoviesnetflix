@@ -6,10 +6,12 @@ import Link from "next/link";
 import Layout from "../../../components/Layout";
 import Heading from "../../../components/Heading";
 import Listing from "../../../components/Listing";
+import TopPicks from "../../../components/TopPicks";
 const listing = () => (
-  <Layout layout="threecoulumnlayout" heading={heading}>
+  <Layout layout="threecolumnlayout" heading={heading}>
     <Heading title={heading}/>
-    <Listing   data={data} layout="threerowlayout"/>
+    <Listing   data={data} layout="threecolumnlayout"/>
+    <TopPicks    layout="threecolumnlayout"/>
   </Layout>
 );
 
