@@ -1,5 +1,16 @@
 @media only screen and (min-width: 768px) {
     .singlecolumnlayout .threecolumnlayout{margin:0 -57px;}
+
+
+    ul {
+        &.threecolumnlayout
+        {
+         li{
+            img{width:300px;height:217px}
+         }
+        }
+    }
+
 }
 
 
@@ -10,9 +21,7 @@ ul {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-     li{
-        img{width:300px;height:217px}
-     }
+     
     }
 	img {
         max-width: 100%;
