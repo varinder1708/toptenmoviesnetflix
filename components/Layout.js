@@ -3,12 +3,13 @@ import Head from "next/head";
 import Header from "./Header";
 import "./Layout.scss";
 import "./index.scss";
+import TopPicks from "../components/TopPicks";
 
 
 
 const Layout = props => {
   const appTitle = `> VAR`;
-  const {heading}=props;
+  const {heading,sidebar}=props;
   return (
     // <div className="Layout">
     //   <Head>
@@ -68,12 +69,10 @@ const Layout = props => {
         <section class="content">
         {props.children}        
         </section>
-        {/* <aside class="sidebar">
-            Sidebar                
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sumenda potius quam expetenda. Nihil opus est exemplis hoc facere longius. At Zeno eum non beatum modo, sed etiam divitem dicere ausus est. Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Itaque quantum adiit periculum!
-            </p>
-        </aside> */}
+       {sidebar && sidebar=="true" && (<aside class="sidebar">
+        <TopPicks    layout="threecolumnlayout"/> 
+        </aside>)}
+        
 
     </div>
     <footer class="footer">

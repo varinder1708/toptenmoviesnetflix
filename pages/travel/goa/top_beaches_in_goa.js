@@ -11,7 +11,7 @@ const listing = () => (
   <Layout layout="threecolumnlayout" heading={heading}>
     <Heading title={heading}/>
     <Listing   data={data} layout="threecolumnlayout"/>
-    <TopPicks    layout="threecolumnlayout"/>
+    <TopPicks showheading="true"    layout="threecolumnlayout"/>
   </Layout>
 );
 

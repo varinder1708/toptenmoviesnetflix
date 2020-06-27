@@ -8,11 +8,11 @@ import Heading from "../../../components/Heading";
 import Listing from "../../../components/Listing";
 import TopPicks from "../../../components/TopPicks";
 const listing = () => (
-  <Layout layout="singlecolumnlayout" heading={heading}>
+  <Layout layout="" heading={heading} sidebar="true">
     
     <Heading title={heading}/>
     <Listing   data={data}/>
-    <TopPicks    layout="threecolumnlayout"/>
+    {/* <TopPicks    layout="threecolumnlayout"/> */}
   </Layout>
 );
 

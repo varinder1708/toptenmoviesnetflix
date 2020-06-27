@@ -12,7 +12,20 @@
     }
 
 }
-
+.sidebar
+{
+    ul{
+li{
+    margin-bottom: 12px;
+}
+    }
+    p{
+        &.img
+        {
+            margin-bottom: 0;
+        }
+    }
+}
 
 ul {
     &.threecolumnlayout
