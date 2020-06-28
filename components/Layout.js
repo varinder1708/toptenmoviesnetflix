@@ -9,7 +9,7 @@ import TopPicks from "../components/TopPicks";
 
 const Layout = props => {
   const appTitle = `> VAR`;
-  const {heading,sidebar}=props;
+  const {heading,sidebar,canonical}=props;
   return (
     // <div className="Layout">
     //   <Head>
@@ -51,7 +51,8 @@ const Layout = props => {
 <meta content="Trishn" property="og:site_name"/>
 <meta content="website" property="og:type"/>
 <meta content="https://trishn.com/" property="og:url"/>
-
+{canonical && (<link rel="canonical" href={canonical} />
+)}
 
 
     </Head>
