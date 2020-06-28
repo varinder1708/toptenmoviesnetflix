@@ -25,7 +25,11 @@ const TopPicks = (props) => (<>
       )}
       {post.name && (
         <span>
+           <Link href={post.link}>
+            <a>
           <strong>{post.name}</strong>
+          </a>
+          </Link>
         </span>
       )}
 
