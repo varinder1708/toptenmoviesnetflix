@@ -20,7 +20,9 @@ const TopPicks = (props) => (<> {
         <p class="img">
           <Link href={post.link}>
             <a>
-              <img src={`/images/${post.image}`}/></a>
+              {/* <img src={`/images/${post.image}`}/> */}
+              <LazyImage src={`/images/${post.image}`} alt={post.name}/>
+              </a>
           </Link>
         </p>
 

@@ -1,3 +1,4 @@
+import LazyImage from './LazyImage'
 import "./Listing.scss";
 const Listing = (props) => (
   <ul class={props.layout}>
@@ -12,7 +13,9 @@ const Listing = (props) => (
           )}
           {post.image && (
             <p class="img">
-              <img src={`/images/${post.image}`}/></p>
+              <LazyImage src={`/images/${post.image}`} alt={post.name}/>
+              {/* <img src={`/images/${post.image}`}/> */}
+              </p>
           )}
           {post.type && (
             <p class="type">{post.type}
