@@ -1,3 +1,4 @@
+import LazyImage from './LazyImage'
 import {isMobile} from "react-device-detect";
 import {data} from '../data/more_reads_goa';
 import Link from "next/link";
