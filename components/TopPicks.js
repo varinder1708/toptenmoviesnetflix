@@ -1,15 +1,17 @@
+import {isMobile} from "react-device-detect";
 import {data} from '../data/more_reads_goa';
 import Link from "next/link";
 import "./Listing.scss";
-const TopPicks = (props) => (<> 
-{
-  props.showheading && props.showheading=="true" && (
+
+
+const TopPicks = (props) => (<> {
+
+  ((props.showheading && props.showheading == "true") || isMobile ) && (
     <div class="heading_black_bg">
-      <span>More from our Network</span>
+      <span>Related Articles</span>
     </div>
   )
-}
- < ul class = {
+} <ul class = {
   props.layout
 } > {
   data.map((post, i) => (
@@ -25,10 +27,10 @@ const TopPicks = (props) => (<>
       )}
       {post.name && (
         <span>
-           <Link href={post.link}>
+          <Link href={post.link}>
             <a>
-          <strong>{post.name}</strong>
-          </a>
+              <strong>{post.name}</strong>
+            </a>
           </Link>
         </span>
       )}

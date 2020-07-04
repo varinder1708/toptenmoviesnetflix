@@ -70,9 +70,9 @@ const Layout = props => {
         <section class="content">
         {props.children}        
         </section>
-       {sidebar && sidebar=="true" && (<aside class="sidebar">
-        <TopPicks    layout="threecolumnlayout"/> 
-        </aside>)}
+       {sidebar && sidebar=="true" && (<aside class="sidebar"><div>
+        <TopPicks    layout="threecolumnlayout" /> 
+        </div></aside>)}
         
 
     </div>
