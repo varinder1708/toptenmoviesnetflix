@@ -1,15 +1,17 @@
 
 import Head from "next/head";
 import Header from "./Header";
+import SideBar from "./SideBar";
+
 import "./Layout.scss";
 import "./index.scss";
-import TopPicks from "../components/TopPicks";
+
 
 
 
 const Layout = props => {
   const appTitle = `> VAR`;
-  const {heading,sidebar,canonical}=props;
+  const {heading,showsidebar,canonical}=props;
   return (
     // <div className="Layout">
     //   <Head>
@@ -29,6 +31,7 @@ const Layout = props => {
       <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=UA-170166482-1" >
+
 </script>
 <script dangerouslySetInnerHTML={
     { __html: `
@@ -66,17 +69,15 @@ const Layout = props => {
         </p>
     </section> */}
 
-    <div class={`flex-container wrapper ${props.layout}`}>
+    <div className={`flex-container wrapper ${props.layout}`}>
         <section class="content">
         {props.children}        
         </section>
-       {sidebar && sidebar=="true" && (<aside class="sidebar"><div>
-        <TopPicks    layout="threecolumnlayout" /> 
-        </div></aside>)}
+       {showsidebar && showsidebar=="true" && ( <aside className="sidebar"><SideBar/></aside>)}
         
 
     </div>
-    <footer class="footer">
+    <footer className="footer">
     
     </footer>
 </main>

@@ -6,8 +6,7 @@ const placeHolder =
 
 const Image = styled.img`
   display: block;
-  height: 100px;
-  width: 100px;
+  
   // Add a smooth animation on loading
   @keyframes loaded {
     0% {

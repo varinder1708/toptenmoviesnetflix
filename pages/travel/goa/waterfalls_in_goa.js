@@ -8,7 +8,7 @@ import Heading from "../../../components/Heading";
 import Listing from "../../../components/Listing";
 import TopPicks from "../../../components/TopPicks";
 const listing = () => (
-  <Layout layout="" heading={heading} sidebar="true">
+  <Layout layout="" heading={heading} showsidebar="true">
     
     <Heading title={heading}/>
     <Listing   data={data}/>
