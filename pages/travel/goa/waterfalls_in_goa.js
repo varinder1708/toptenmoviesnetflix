@@ -7,7 +7,7 @@ import Layout from "../../../components/Layout";
 import Heading from "../../../components/Heading";
 import Listing from "../../../components/Listing";
 import TopPicks from "../../../components/TopPicks";
-import config from "../config";
+import config from "../../../config/goa_travel";
 const listing = () => (
   <Layout layout="" heading={heading} showsidebar="true" navbar={config}>
     <Heading title={heading}/>
