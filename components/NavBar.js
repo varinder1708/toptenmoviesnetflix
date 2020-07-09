@@ -23,6 +23,10 @@ const NavBar = props => {
         $(links).css({'display':'none'});
         $(quit).css({'display':'none'});
       })
+
+      $("#links .NavButton ").on("click",()=>{
+        $( "#quit" ).trigger( "click" );
+      })
     }
   });
   return (<>
