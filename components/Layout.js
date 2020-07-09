@@ -11,7 +11,7 @@ import "./index.scss";
 
 const Layout = props => {
   const appTitle = `> VAR`;
-  const {heading,showsidebar,canonical}=props;
+  const {heading,showsidebar,canonical,navbar}=props;
   return (
     // <div className="Layout">
     //   <Head>
@@ -43,6 +43,8 @@ const Layout = props => {
     `}
 }>
 </script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
 <title>{props.heading} | Trishn</title>
 <meta http-equiv="Last-Modified" content="Saturday, 20 June, 2020 07:15:29AM"/>
 <meta name="Last-Modified" content="Saturday, 20 June, 2020 07:15:29AM"/>
@@ -61,7 +63,7 @@ const Layout = props => {
 
     </Head>
     <header class="header">
-    <Header appTitle={appTitle} />
+    <Header appTitle={appTitle} navbar={navbar}/>
     </header>
     {/* <section class="hero">
         Hero

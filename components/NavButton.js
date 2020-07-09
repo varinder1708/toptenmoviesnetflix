@@ -7,7 +7,7 @@ const NavButton = props => (
     <div className={`NavButton ${
         props.router.pathname === props.path ? "active" : ""
       }`}>
-      <div className="Icon">{props.icon}</div>
+      {/* <div className="Icon">{props.icon}</div> */}
       <span className="Label">{props.label}</span>
     </div>
   </Link>
