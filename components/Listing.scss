@@ -88,6 +88,9 @@ ul {
         li{flex-basis: 100%;}
         
         }
-        img{width: 100%;}
+        //img{width: 100%;}
+        
+        //full width image
+        img{width: 108%;margin-left: -4%;max-width:108%;}
     }
   }
