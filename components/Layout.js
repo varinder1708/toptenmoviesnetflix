@@ -5,7 +5,7 @@ import SideBar from "./SideBar";
 
 import "./Layout.scss";
 import "./index.scss";
-
+import "./Heading.scss";
 
 
 
@@ -73,7 +73,11 @@ const Layout = props => {
     </section> */}
 
     <div className={`flex-container wrapper ${props.layout}`}>
+    
         <section class="content">
+        <h1>
+      {props.heading}
+    </h1>
         {props.children}        
         </section>
        {showsidebar && showsidebar=="true" && ( <aside className="sidebar"><SideBar/></aside>)}

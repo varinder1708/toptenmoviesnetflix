@@ -9,7 +9,7 @@ import TopPicks from "../../../components/TopPicks";
 import config from "../../../config/goa_travel";
 const listing = () => (
   <Layout layout="" heading={heading} showsidebar="true" navbar={config}>
-    <Heading title={heading}/>
+    {/* <Heading title={heading}/> */}
     <Listing   data={data}/>
     {/* <TopPicks    layout="threecolumnlayout"/> */}
   </Layout>

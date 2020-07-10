@@ -9,7 +9,7 @@ import Listing from "../../components/Listing";
 const listing = () => (
   <Layout layout="singlecolumnlayout" heading={heading}>
   
-    <Heading title={heading}/>
+    {/* <Heading title={heading}/> */}
     <Listing   data={data}/>
   </Layout>
 );
