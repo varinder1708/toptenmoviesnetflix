@@ -1,5 +1,6 @@
 import LazyImage from './LazyImage'
 import "./Listing.scss";
+import Link from "next/link";
 const Listing = (props) => (
   <ul class={props.layout}>
     {props
@@ -8,7 +9,10 @@ const Listing = (props) => (
         <li>
           {post.name && (
             <span>
-              <strong>{i + 1}.{post.name}</strong>
+              <strong>
+                {post.link? <Link href={post.link}><a>{i + 1}.{post.name}</a></Link>:`${i + 1}.${post.name}`}
+                {/* {i + 1}.{post.name} */}
+                </strong>
             </span>
           )}
           {post.image && (

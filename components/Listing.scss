@@ -29,6 +29,9 @@ strong{
             margin-top:0; 
             img{
                 border-radius: 7px;
+                -moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
             }
         }
     }
@@ -82,7 +85,21 @@ ul {
     }
 }
 @media only screen and (max-width: 600px) {
-    ul{
+    aside{
+        &.sidebar
+        {
+            ul{
+                li{
+                    width:100%;
+                    img{width: 100%;}    
+                }
+            }
+            
+        }
+    }
+    section{
+    &.content{
+        ul{
         &.threecolumnlayout
         {
         li{flex-basis: 100%;}
@@ -93,4 +110,6 @@ ul {
         //full width image
         img{width: 108%;margin-left: -4%;max-width:108%;}
     }
+}
+}
   }
