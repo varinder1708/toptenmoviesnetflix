@@ -8,18 +8,19 @@ const Listing = (props) => (
       .map((post, i) => (
         <li>
           {post.name && (
-            <span>
-              <strong>
-                {post.link? <Link href={post.link}><a>{i + 1}.{post.name}</a></Link>:`${i + 1}.${post.name}`}
+            <h3>
+                {post.link? <Link href={post.link}><a>{i + 1}. {post.name}</a></Link>:`${i + 1}. ${post.name}`}
                 {/* {i + 1}.{post.name} */}
-                </strong>
-            </span>
+                </h3>
           )}
           {post.image && (
             <p class="img">
               <LazyImage src={`/images/${post.image}`} alt={post.name}/>
               {/* <img src={`/images/${post.image}`}/> */}
               </p>
+          )}
+          {post.i && (
+            <div dangerouslySetInnerHTML={{__html: post.i}}></div>
           )}
           {post.type && (
             <p class="type">{post.type}
