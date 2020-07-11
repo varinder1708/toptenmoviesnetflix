@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import Heading from "../components/Heading";
 import Listing from "../components/Listing";
 import TopPicks from "../components/TopPicks";
-const canonical="https://trishn.com/travel/goa/waterfalls_in_goa";
+const canonical="https://trishn.com/travel/goa/waterfalls-in-goa";
 const listing = () => (
   <Layout layout="singlecolumnlayout" heading={heading} canonical={canonical}>
     
