@@ -6,9 +6,10 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import Heading from "../components/Heading";
 import Listing from "../components/Listing";
+import {nav_config} from "config/constants";
 const canonical="https://trishn.com/netflix/upcoming_movies_netflix";
 const listing = () => (
-  <Layout layout="singlecolumnlayout" heading={heading} canonical={canonical}>
+  <Layout  heading={heading} canonical={canonical} showsidebar="true" navbar={nav_config}>
     <Head>
       <title>{heading}</title>
     </Head>
