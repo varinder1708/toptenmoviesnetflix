@@ -7,7 +7,7 @@ const config = {
         //   icon: <FontAwesomeIcon icon={faCompass} />
       }, {
         label: "Top 26 beaches in Goa",
-        path: "/travel/goa/top_-goa-beaches",
+        path: "/travel/goa/top-goa-beaches",
         //   icon: <FontAwesomeIcon icon={faMapMarkerAlt} />
       }, {
         label: "Top 10 beaches in Goa",
