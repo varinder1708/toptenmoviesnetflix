@@ -1,4 +1,5 @@
-const config = {
+export const  site="https://trishn.com"
+export const nav_config = {
     'showmenu': true,
     navButtons : [
       {
@@ -18,5 +19,5 @@ const config = {
       // icon={faUser} /> }
     ]
   };
-  export default config;
+  
   

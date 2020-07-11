@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "./Header";
 import SideBar from "./SideBar";
 import {isMobile,isBrowser} from "react-device-detect";
+import {site} from "config/constants";
 import "./Layout.scss";
 import "./index.scss";
 import "./Heading.scss";
@@ -43,7 +44,7 @@ const Layout = props => {
     `}
 }>
 </script>
-<link rel="icon" href="https://trishn.com/images/icon.png"/>
+<link rel="icon" href="/images/icon.png"/>
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
@@ -58,7 +59,7 @@ const Layout = props => {
 <meta content={`${heading}`} property="og:description"/>
 <meta content="Trishn" property="og:site_name"/>
 <meta content="website" property="og:type"/>
-<meta content="https://trishn.com/" property="og:url"/>
+<meta content={`${site}`} property="og:url"/>
 {canonical && (<link rel="canonical" href={canonical} />
 )}
 
@@ -67,6 +68,7 @@ const Layout = props => {
     <header class="header">
     {isMobile?<span class="logo"><img src="/images/logo.png"/></span>:''}
     <Header appTitle={appTitle} navbar={navbar}/>
+    
     </header>
     {/* <section class="hero">
         Hero
@@ -88,7 +90,9 @@ const Layout = props => {
 
     </div>
     <footer className="footer">
-    
+    <div itemscope="itemscope" itemtype="http://schema.org/WebSite">
+    <link itemprop="url" href={`${site}`}/>
+  </div>
     </footer>
 </main>
   );

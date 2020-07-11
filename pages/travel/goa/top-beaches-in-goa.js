@@ -7,9 +7,9 @@ import Layout from "../../../components/Layout";
 import Heading from "../../../components/Heading";
 import Listing from "../../../components/Listing";
 import TopPicks from "../../../components/TopPicks";
-import config from "../../../config/goa_travel";
+import {nav_config} from "../../../config/constants";
 const listing = () => (
-  <Layout layout="threecolumnlayout" heading={heading} navbar={config}>
+  <Layout layout="threecolumnlayout" heading={heading} navbar={nav_config}>
     {/* <Heading title={heading}/> */}
     <Listing   data={data} layout="threecolumnlayout"/>
     <TopPicks showheading="true"    layout="threecolumnlayout"/>
