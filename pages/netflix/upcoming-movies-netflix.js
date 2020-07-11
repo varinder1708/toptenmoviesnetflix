@@ -6,9 +6,8 @@ import Link from "next/link";
 import Layout from "../../components/Layout";
 import Heading from "../../components/Heading";
 import Listing from "../../components/Listing";
-const canonical="https://trishn.com/netflix/upcoming-movies-netflix";
 const listing = () => (
-  <Layout layout="singlecolumnlayout" heading={heading} canonical={canonical}>
+  <Layout layout="singlecolumnlayout" heading={heading}>
   
     {/* <Heading title={heading}/> */}
     <Listing   data={data}/>
