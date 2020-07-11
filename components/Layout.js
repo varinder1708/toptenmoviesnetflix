@@ -43,6 +43,8 @@ const Layout = props => {
     `}
 }>
 </script>
+<link rel="icon" href="https://trishn.com/images/icon.png"/>
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
 <title>{props.heading} | Trishn</title>
