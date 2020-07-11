@@ -63,7 +63,7 @@ const Layout = props => {
 
     </Head>
     <header class="header">
-    {isMobile?<span class="logo"><img src="/images/t4.png"/></span>:''}
+    {isMobile?<span class="logo"><img src="/images/logo.png"/></span>:''}
     <Header appTitle={appTitle} navbar={navbar}/>
     </header>
     {/* <section class="hero">
