@@ -2,7 +2,7 @@
 import Head from "next/head";
 import Header from "./Header";
 import SideBar from "./SideBar";
-
+import {isMobile,isBrowser} from "react-device-detect";
 import "./Layout.scss";
 import "./index.scss";
 import "./Heading.scss";
@@ -63,6 +63,7 @@ const Layout = props => {
 
     </Head>
     <header class="header">
+    {isMobile?<span class="logo"><img src="/images/t4.png"/></span>:''}
     <Header appTitle={appTitle} navbar={navbar}/>
     </header>
     {/* <section class="hero">
