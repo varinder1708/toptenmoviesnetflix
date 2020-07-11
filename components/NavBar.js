@@ -10,7 +10,7 @@ const NavBar = props => {
         var burger = $('#burger');
         var links = $('#links');
         var quit = $('#quit');
-        $(burger).css( {'padding':'16px 16px 200vw 200vw'});
+        $(burger).css( {'padding':'16px 16px 200vw 200vw','color':'#fff','background':'linear-gradient(45deg, #9682C8 10%, #05BCC9)'});
         $(links).css({'display':'flex'});
         $(quit).css({'display':'inline'});
       })
@@ -19,7 +19,8 @@ const NavBar = props => {
         var burger = $('#burger');
         var links = $('#links');
         var quit = $('#quit');
-        $(burger).css({'padding':'5px'});
+        $(burger).css({'padding':'5px','background':'none','color':'#05BCC9'});
+        
         $(links).css({'display':'none'});
         $(quit).css({'display':'none'});
       })
