@@ -7,8 +7,9 @@ import Heading from "../../../components/Heading";
 import Show from "../../../components/Show";
 import TopPicks from "../../../components/TopPicks";
 import config from "../../../config/goa_travel";
+const canonical="https://trishn.com/travel/goa/waterfalls-in-goa/dudhsagar-goa-waterfall";
 const listing = () => (
-  <Layout layout="" heading={heading} showsidebar="true" navbar={config}>
+  <Layout layout="" heading={heading} showsidebar="true" navbar={config} canonical={canonical}>
     {/* <Heading title={heading}/> */}
     <Show   data={data}/>
     {/* <TopPicks    layout="threecolumnlayout"/> */}
