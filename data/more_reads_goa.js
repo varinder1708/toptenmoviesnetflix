@@ -38,7 +38,7 @@ export const data = [
   "name": "Thailand Beautiful Beaches",
   "image": "thailand/beaches/ang_thong.jpg",
   "desc": "",
-  "link": "",
+  "link": "/travel/thailand/most-beautiful-beaches-in-thailand",
   "desc": "",
   'id': 'most-beautiful-beaches-in-thailand'
 }
