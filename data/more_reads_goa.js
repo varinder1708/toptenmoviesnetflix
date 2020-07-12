@@ -34,5 +34,12 @@ export const data = [
    "link": "/travel/goa/top-goa-beaches",
    "desc": "",
    'id': 'top-beaches-in-goa'
- }
+ },{
+  "name": "Thailand Beautiful Beaches",
+  "image": "thailand/beaches/ang_thong.jpg",
+  "desc": "",
+  "link": "",
+  "desc": "",
+  'id': 'most-beautiful-beaches-in-thailand'
+}
 ]
