@@ -2,7 +2,7 @@ import LazyImage from './LazyImage'
 import "./Listing.scss";
 import Link from "next/link";
 const Listing = (props) => (
-  <ul class={props.layout}>
+  <ul class={`${props.layout} fullscreen_images`}>
     {props
       .data
       .map((post, i) => (
@@ -20,7 +20,7 @@ const Listing = (props) => (
               </p>
           )}
           {post.i && (
-            <div dangerouslySetInnerHTML={{__html: post.i}}></div>
+            <div class="insta" dangerouslySetInnerHTML={{__html: post.i}}></div>
           )}
           {post.type && (
             <p class="type">{post.type}
