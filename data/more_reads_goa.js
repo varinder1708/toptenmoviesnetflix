@@ -43,7 +43,7 @@ export const data = [
   'id': 'most-beautiful-beaches-in-thailand'
 },{
   "name": "Hippie Destinations in India",
-  "image": "hippie-destinations-india/hippie.jpg",
+  "image": "travel/hippie-destinations-india/hippie.jpg",
   "desc": "",
   "link": "/travel/hippie-destinations-in-india",
   "desc": "",
