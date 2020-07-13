@@ -19,6 +19,11 @@ const Listing = (props) => (
               {/* <img src={`/images/${post.image}`}/> */}
               </p>
           )}
+          
+          
+
+          
+
           {post.i && (
             <div class="insta" dangerouslySetInnerHTML={{__html: post.i}}></div>
           )}
@@ -29,6 +34,19 @@ const Listing = (props) => (
           {post.desc && (
             <div dangerouslySetInnerHTML={{__html: post.desc}}></div>
          )}
+         {post.best && (
+            <div class="na"><strong>Best Time to Visit</strong>: {`${post.best}`}</div>
+          )}
+
+         {post.na && (
+            <div class="na"><strong>Nearest Airport</strong>: {`${post.na}`}</div>
+          )}
+          {post.nra && (
+            <div class="nra"><strong>Nearest Railway Station</strong>: {`${post.nra}`}</div>
+          )}
+          {post.htr && (
+            <div class="nra"><strong>Nearest Railway Station</strong>: {`${post.htr}`}</div>
+          )}
         </li>
       ))}
   </ul>

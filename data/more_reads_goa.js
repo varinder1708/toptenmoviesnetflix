@@ -41,5 +41,12 @@ export const data = [
   "link": "/travel/thailand/most-beautiful-beaches-in-thailand",
   "desc": "",
   'id': 'most-beautiful-beaches-in-thailand'
+},{
+  "name": "Hippie Destinations in India",
+  "image": "hippie-destinations-india/hippie.jpg",
+  "desc": "",
+  "link": "/travel/hippie-destinations-in-india",
+  "desc": "",
+  'id': 'hippie-destinations-in-india'
 }
 ]
