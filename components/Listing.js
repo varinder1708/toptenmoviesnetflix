@@ -45,7 +45,7 @@ const Listing = (props) => (
             <div class="nra"><strong>Nearest Railway Station</strong>: {`${post.nra}`}</div>
           )}
           {post.htr && (
-            <div class="nra"><strong>Nearest Railway Station</strong>: {`${post.htr}`}</div>
+            <div class="nra"><strong>How to Reach</strong>: {`${post.htr}`}</div>
           )}
         </li>
       ))}
