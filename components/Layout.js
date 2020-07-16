@@ -7,7 +7,7 @@ import {site} from "config/constants";
 import "./Layout.scss";
 import "./index.scss";
 import "./Heading.scss";
-import {nav_config} from "config/constants";
+import {nav_config} from "../config/constants";
 
 
 
