@@ -8,7 +8,7 @@ import Show from "components/Show";
 import TopPicks from "components/TopPicks";
 
 const listing = () => (
-  <Layout layout="" heading={heading} showsidebar="true" navbar={nav_config}>
+  <Layout layout="" heading={heading} showsidebar="true" >
     {/* <Heading title={heading}/> */}
     <Show   data={data}/>
     {/* <TopPicks    layout="threecolumnlayout"/> */}
