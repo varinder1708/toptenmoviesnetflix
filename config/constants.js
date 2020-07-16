@@ -11,8 +11,16 @@ export const nav_config = {
         path: "/travel/goa/top-goa-beaches",
         //   icon: <FontAwesomeIcon icon={faMapMarkerAlt} />
       }, {
-        label: "Top 10 beaches in Goa",
-        path: "/travel/goa/top-beaches-in-goa",
+        label: "hippie destinations in India",
+        path: "/travel/hippie-destinations-in-india",
+        //   icon: <FontAwesomeIcon icon={faShoppingCart} />
+      }, {
+        label: "Beautiful Beaches in Thailand",
+        path: "/travel/thailand/most-beautiful-beaches-in-thailand",
+        //   icon: <FontAwesomeIcon icon={faShoppingCart} />
+      }, {
+        label: "Top Food Bloggers in India",
+        path: "/food/top-food-bloggers-in-india",
         //   icon: <FontAwesomeIcon icon={faShoppingCart} />
       }
       // {   label: "Profile",   path: "/profile",   icon: <FontAwesomeIcon

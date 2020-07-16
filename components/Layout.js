@@ -7,12 +7,14 @@ import {site} from "config/constants";
 import "./Layout.scss";
 import "./index.scss";
 import "./Heading.scss";
+import {nav_config} from "config/constants";
 
 
 
 const Layout = props => {
   const appTitle = `> VAR`;
-  const {heading,showsidebar,canonical,navbar}=props;
+  const {heading,showsidebar,canonical}=props;
+  const navbar=nav_config;
   return (
     // <div className="Layout">
     //   <Head>
