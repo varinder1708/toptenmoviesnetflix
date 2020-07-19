@@ -1,8 +1,8 @@
 .carousel .carousel-status{padding:0px 6px;background-color: #111;}
-.thumbs-wrapper{display: none;}
+/* .thumbs-wrapper{display: none;} */
 .carousel.carousel-slider{overflow: unset;}
 .carousel .slide .legend{display: none;}
 .carousel .control-dots{margin:2px 0}
 .carousel .slider-wrapper.axis-horizontal .slider .slide div{height:100%}
 section.content ul.fullscreen_images .carousel img{height:100%}
-.carousel .carousel-status{top:-3px}
+.carousel .carousel-status{top:-10px}
