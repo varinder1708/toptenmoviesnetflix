@@ -51,9 +51,9 @@ const Layout = props => {
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
 <title>{`${heading}`}</title>
-<meta http-equiv="Last-Modified" content="Saturday, 11 July, 2020 07:15:29AM"/>
-<meta name="Last-Modified" content="Saturday, 11 July, 2020 07:15:29AM"/>
-<meta name="Last-Modified-Date" content="Sat, July 11, 2020"/>
+<meta http-equiv="Last-Modified" content="Sunday, 19 July, 2020 07:15:29AM"/>
+<meta name="Last-Modified" content="Sunday, 19 July, 2020 07:15:29AM"/>
+<meta name="Last-Modified-Date" content="Sun, July 19, 2020"/>
 <meta name="Last-Modified-Time" content="07.15AM IST"/>
 <meta content={`${heading}`} name="description"/>
 <meta content={`${heading}`} name="keywords"/>
