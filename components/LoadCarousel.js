@@ -6,7 +6,7 @@ import styles from "react-responsive-carousel/lib/styles/carousel.css";
 import "./Carouselfix.css";
 
 const LoadCarousel = (props) => (
-    <Carousel>
+    <Carousel autoPlay>
     {props
       .data
       .map((post, i) => (
