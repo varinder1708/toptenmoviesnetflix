@@ -1,0 +1,5 @@
+.carousel .carousel-status{padding:0px 6px;background-color: #111;}
+.thumbs-wrapper{display: none;}
+.carousel.carousel-slider{overflow: unset;}
+.carousel .slide .legend{display: none;}
+.carousel .control-dots{margin:2px 0}
