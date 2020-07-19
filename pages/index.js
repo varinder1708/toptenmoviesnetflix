@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import Heading from "../components/Heading";
 import Listing from "../components/Listing";
 import {nav_config} from "config/constants";
-const canonical="https://trishn.com/netflix/upcoming_movies_netflix";
+const canonical="https://trishn.com/netflix/upcoming-movies-netflix";
 const listing = () => (
   <Layout  heading={heading} canonical={canonical} showsidebar="true" navbar={nav_config}>
     <Head>
