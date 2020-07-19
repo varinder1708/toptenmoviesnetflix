@@ -120,6 +120,10 @@ ul {
         ul{
             &.fullscreen_images{
                 img{width: 108%;margin-left: -4%;max-width:108%;}
+            .carousel
+            {
+                img{width: 100%;margin-left: 0%;max-width:100%;}
+            }
             }
         &.threecolumnlayout
         {

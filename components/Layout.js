@@ -8,8 +8,6 @@ import "./Layout.scss";
 import "./index.scss";
 import "./Heading.scss";
 import {nav_config} from "../config/constants";
-import styles from "react-responsive-carousel/lib/styles/carousel.css";
-import "./Carouselfix.css";
 
 
 

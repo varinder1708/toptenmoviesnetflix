@@ -8,7 +8,7 @@ import Heading from "../components/Heading";
 import Listing from "../components/Listing";
 const listing = () => (
     <Layout>
- <Heading title={heading}/>
+     <Heading title={heading}/>
       <Listing data={data}/>
     </Layout>
   );

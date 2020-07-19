@@ -15,7 +15,18 @@ export const data = [
   }, {
     "link": "",
     "name": "Kasol, Himachal Pradesh",
-    "image": "travel/hippie-destinations-india/kasol.jpg",
+    "image": [
+      {
+        "src": "travel/hippie-destinations-india/kasol.jpg",
+        "name": "kasol"
+      }, {
+        "src": "travel/hippie-destinations-india/kasol-trek.jpg",
+        "name": "kasol trek"
+      }, {
+        "src": "travel/hippie-destinations-india/kasol-kheerganga-trek.jpg",
+        "name": "kasol kheerganga trek"
+      }
+    ],
     "desc": 'The place has been home to many Israeli hippies as suggested by the Hebrew signb' +
         'oards everywhere.<br/><br/>Kasol is a hamlet in the district Kullu of the Indian' +
         ' state of Himachal Pradesh. It is situated in Parvati Valley, on the banks of th' +
@@ -33,7 +44,10 @@ export const data = [
   }, {
     "link": "",
     "name": "Varkala, Kerala",
-    "image": "travel/hippie-destinations-india/varkala.jpg",
+    "image": [
+     { "src" : "travel/hippie-destinations-india/varkala.jpg", "name" : "varkala beach"},
+     { "src" : "travel/hippie-destinations-india/varkala2.jpg", "name" : "varkala beach cliff"}
+    ],
     "desc": 'A small strand of golden beach nuzzles Varkala\'s North Cliff area, where restau' +
         'rants play innocuous world music and shops sell elephant-stamped trousers, silve' +
         'r jewellery and cotton yoga-mat bags. While it\'s certainly on the beaten track ' +
@@ -100,8 +114,7 @@ export const data = [
         " the Manali holiday packages in which the transport is also included or you can " +
         "book Volvo buses that are good at riding in the mountainous regions. You can eve" +
         "n book private cabs to Manali."
-  },
-  {
+  }, {
     "link": "",
     "name": "McLeodGanj, Himachal Pradesh",
     "image": "travel/hippie-destinations-india/mc.jpg",

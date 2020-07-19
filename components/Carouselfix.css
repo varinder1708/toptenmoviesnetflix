@@ -3,3 +3,6 @@
 .carousel.carousel-slider{overflow: unset;}
 .carousel .slide .legend{display: none;}
 .carousel .control-dots{margin:2px 0}
+.carousel .slider-wrapper.axis-horizontal .slider .slide div{height:100%}
+section.content ul.fullscreen_images .carousel img{height:100%}
+.carousel .carousel-status{top:-3px}
