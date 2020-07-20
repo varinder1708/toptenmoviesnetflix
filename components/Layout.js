@@ -13,7 +13,7 @@ import {nav_config} from "../config/constants";
 
 const Layout = props => {
   const appTitle = `> VAR`;
-  const {heading,showsidebar,canonical}=props;
+  const {heading,showsidebar,canonical,keywords}=props;
   const navbar=nav_config;
   return (
     // <div className="Layout">
@@ -56,7 +56,8 @@ const Layout = props => {
 <meta name="Last-Modified-Date" content="Sun, July 19, 2020"/>
 <meta name="Last-Modified-Time" content="07.15AM IST"/>
 <meta content={`${heading}`} name="description"/>
-<meta content={`${heading}`} name="keywords"/>
+
+<meta content={keywords?keywords:heading} name="keywords"/>
 <meta content={`${heading}`} property="og:title"/>
 <meta content={`${heading}`} property="og:description"/>
 <meta content="Trishn" property="og:site_name"/>
