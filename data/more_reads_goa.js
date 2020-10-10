@@ -1,5 +1,13 @@
 export const data = [
   {
+    "name": "Things to do in Dalhousie",
+    "image": "himachal/dalhousie/khajjar4.jpg",
+    "desc": "",
+    "link": "/travel/himachal/dalhousie/things-to-do-in-dalhousie",
+    "desc": "",
+    'id': 'things-to-do-in-dalhousie'
+  },
+  {
     "name": "Top 10 Beaches in goa",
     "image": "beaches/anjuna-beach-goa-thumb-d.jpg",
     "desc": "",
