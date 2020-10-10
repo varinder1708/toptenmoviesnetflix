@@ -22,6 +22,10 @@ export const nav_config = {
         label: "Top Food Bloggers in India",
         path: "/food/top-food-bloggers-in-india",
         //   icon: <FontAwesomeIcon icon={faShoppingCart} />
+      }, {
+        label: "Things to do in Dalhousie",
+        path: "/travel/himachal/dalhousie/things-to-do-in-dalhousie",
+        //   icon: <FontAwesomeIcon icon={faShoppingCart} />
       }
       // {   label: "Profile",   path: "/profile",   icon: <FontAwesomeIcon
       // icon={faUser} /> }
