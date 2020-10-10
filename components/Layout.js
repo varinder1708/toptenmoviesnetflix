@@ -89,7 +89,7 @@ const Layout = props => {
       {props.heading}
     </h1>
    
-  <Share/>
+  <Share url={canonical}/>
     
         {props.children}        
         </section>

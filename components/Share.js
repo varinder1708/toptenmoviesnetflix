@@ -52,10 +52,12 @@ const Share = props => {
   return (<>
 <div className="share">
 <TwitterIcon size={32} round={true} />
-<FacebookShareButton  url="https://trishn.com/travel/himachal/dalhousie/things-to-do-in-dalhousie" >
+<FacebookShareButton  url={props.url} >
 <FacebookIcon size={32} round={true}/>
 </FacebookShareButton>
+<WhatsappShareButton url={props.url}>
 <WhatsappIcon size={32} round={true}/>
+</WhatsappShareButton>
 <TwitterIcon size={32} round={true}/>
 <EmailIcon size={32} round={true}/>
 <LinkedinIcon size={32} round={true}/>
