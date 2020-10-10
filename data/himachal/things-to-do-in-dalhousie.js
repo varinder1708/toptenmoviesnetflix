@@ -98,10 +98,7 @@ export const data = [
         "src": "himachal/dalhousie/chamera2.jpg",
         "name": "chamera lake"
       },
-      {
-        "src": "himachal/dalhousie/chamera3.jpg",
-        "name": "chamera lake"
-      }
+      
     ],
     "desc": 'Chamera Lake is a mystic lake located in the Chamba district in , in the northern state of Himachal Pradesh. It is actually located 25 kms from the main hill station. At an elevated height of 763 meters above sea level, it makes a perfect getaway with friends, family and loved ones, to spend a day or have a picnic. The Chamera Dam nearby is the source of Chamera Lake, as it is the former’s reservoir. Apart from this source, it receives a continual supply from River Ravi. '
   }
