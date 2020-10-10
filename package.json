@@ -25,6 +25,7 @@
     "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
     "react-responsive-carousel": "^3.2.9",
+    "react-share": "^4.3.0",
     "styled-components": "^5.1.1"
   }
 }

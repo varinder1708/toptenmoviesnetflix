@@ -2,12 +2,14 @@
 import Head from "next/head";
 import Header from "./Header";
 import SideBar from "./SideBar";
+import Share from "./Share";
 import {isMobile,isBrowser} from "react-device-detect";
 import {site} from "config/constants";
 import "./Layout.scss";
 import "./index.scss";
 import "./Heading.scss";
 import {nav_config} from "../config/constants";
+
 
 
 
@@ -62,7 +64,7 @@ const Layout = props => {
 <meta content={`${heading}`} property="og:description"/>
 <meta content="Trishn" property="og:site_name"/>
 <meta content="website" property="og:type"/>
-<meta content={`${site}`} property="og:url"/>
+<meta content={`${canonical}`} property="og:url"/>
 {canonical && (<link rel="canonical" href={canonical} />
 )}
 
@@ -86,6 +88,9 @@ const Layout = props => {
         <h1>
       {props.heading}
     </h1>
+   
+  <Share/>
+    
         {props.children}        
         </section>
        {showsidebar && showsidebar=="true" && ( <aside className="sidebar"><SideBar/></aside>)}
