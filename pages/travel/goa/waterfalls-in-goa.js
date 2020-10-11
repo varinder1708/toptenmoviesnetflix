@@ -10,7 +10,7 @@ import TopPicks from "../../../components/TopPicks";
 const listing = () => (
   <Layout data={data}>
     {/* <Heading title={heading}/> */}
-    <Listing   data={data.data}/>
+    <Listing  layout=""  data={data.data}/>
     {/* <TopPicks    layout="threecolumnlayout"/> */}
   </Layout>
 );
