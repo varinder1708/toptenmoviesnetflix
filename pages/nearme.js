@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
+// import Layout from "../components/Layout";
 
-const NearMeView = props => <Layout>{`Near Me View`}</Layout>;
+// const NearMeView = props => <Layout>{`Near Me View`}</Layout>;
 
-export default NearMeView;
+// export default NearMeView;

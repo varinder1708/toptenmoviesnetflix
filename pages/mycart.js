@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
+// import Layout from "../components/Layout";
 
-const MyCartView = props => <Layout>{`My Cart View`}</Layout>;
+// const MyCartView = props => <Layout>{`My Cart View`}</Layout>;
 
-export default MyCartView;
+// export default MyCartView;
