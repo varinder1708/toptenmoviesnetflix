@@ -1,3 +1,5 @@
+import{site} from 'config/constants';
+export const canonical=`${site}/travel/goa/dudhsagar-goa-waterfall`;
 export const heading="Dudhsagar Falls Goa";
 export const data={"desc":`<div>
 <p>

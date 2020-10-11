@@ -1,3 +1,5 @@
+import{site} from 'config/constants';
+export const canonical=`${site}/travel/hidden-gems-of-india`;
 export const heading = "Most Beautiful Beaches in Thailand";
 export const data = [
   {

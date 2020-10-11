@@ -1,3 +1,5 @@
+import{site} from 'config/constants';
+export const canonical=`${site}/travel/goa/waterfalls-in-goa`;
 export const keywords = "waterfalls in Goa, Goa waterfalls, sightseeing of Goa, tourist attractions of Goa, places to visit in Goa, tourist destination of Goa, famous tourist spots of Goa,goa hotels,goa beaches,goa trance,goa tours,goa travel,hotels in goa,travel to goa,goa india,goa resorts,beach travel to goa";
 export const heading = "Waterfalls in Goa";
 export const data = [

@@ -1,3 +1,5 @@
+import{site} from 'config/constants';
+export const canonical=`${site}/travel/thailand/most-beautiful-beaches-in-thailand`;
 export const keywords = "Most Beautiful Beaches in Thailand,Thailand’s Best BeachesKoh ,Off the beaten track Thailand,Remote Thailand,Koh Kut,Island hopping andaman sea,Trekking Thailand,National park thailand,Full Moon Party,Bahn Mi,Beautiful Thailand Beaches,Pho in Thailand";
 export const heading = "Most Beautiful Beaches in Thailand";
 export const data = [

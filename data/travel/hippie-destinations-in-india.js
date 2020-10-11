@@ -1,3 +1,5 @@
+import{site} from 'config/constants';
+export const canonical=`${site}/travel/hippie-destinations-in-india`;
 export const keywords = "best hippie places in india, Hippie Destinations in India, Hippie Locations in India";
 export const heading = "Hippie Destinations in India";
 export const data = [

@@ -1,3 +1,5 @@
+import{site} from 'config/constants';
+export const canonical=`${site}/travel/goa/top-beaches-in-goa`;
 export const keywords = "goa hotels,goa beaches,goa trance,goa tours,goa travel,hotels in goa,travel to g" +
     "oa,goa india,goa resorts,beach travel to goa";
 export const heading = "Top Beaches in goa";

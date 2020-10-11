@@ -1,7 +1,7 @@
 // import fs from 'fs' import path from 'path'
 
 import {data, heading} from '../../data/upcomingshows';
-import{site} from 'config/constants'
+import{site} from 'config/constants';
 import Link from "next/link";
 import Layout from "../../components/Layout";
 import Heading from "../../components/Heading";

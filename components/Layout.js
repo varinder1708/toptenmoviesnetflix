@@ -2,20 +2,24 @@
 import Head from "next/head";
 import Header from "./Header";
 import SideBar from "./SideBar";
+import {nav_config} from "config/constants";
 import Share from "./Share";
 import {isMobile,isBrowser} from "react-device-detect";
 import {site} from "config/constants";
 import "./Layout.scss";
 import "./index.scss";
 import "./Heading.scss";
-import {nav_config} from "../config/constants";
+
 
 
 
 
 const Layout = props => {
-  const appTitle = `> VAR`;
-  const {heading,showsidebar,canonical,keywords}=props;
+  const appTitle = `VAR`;
+  
+  const {layout="",heading,showsidebar="true",canonical,keywords,data}=props.data;
+  let image="";
+  image=data[0] && data[0].image[0] && data[0].image[0].src?data[0] && data[0].image[0] && data[0].image[0].src:data[0] && data[0].image?data[0].image:""
   const navbar=nav_config;
   return (
     // <div className="Layout">
@@ -65,6 +69,13 @@ const Layout = props => {
 <meta content="Trishn" property="og:site_name"/>
 <meta content="website" property="og:type"/>
 <meta content={`${canonical}`} property="og:url"/>
+
+
+
+{image!="" && (<meta content={`${site}/images/${image}`} property="og:image"/>
+)}
+
+
 {canonical && (<link rel="canonical" href={canonical} />
 )}
 
@@ -72,7 +83,7 @@ const Layout = props => {
     </Head>
     <header class="header">
     {isMobile?<span class="logo"><img src="/images/logo.png"/></span>:''}
-    <Header appTitle={appTitle} navbar={navbar}/>
+    <Header navbar={navbar}/>
     
     </header>
     {/* <section class="hero">
@@ -82,11 +93,11 @@ const Layout = props => {
         </p>
     </section> */}
 
-    <div className={`flex-container wrapper ${props.layout}`}>
+    <div className={`flex-container wrapper ${layout}`}>
     
         <section class="content">
         <h1>
-      {props.heading}
+      {heading}
     </h1>
    
   <Share url={canonical}/>
