@@ -19,7 +19,14 @@ const Layout = props => {
   
   const {layout="",heading,showsidebar="true",canonical,keywords,data}=props.data;
   let image="";
-  image=data[0] && data[0].image[0] && data[0].image[0].src?data[0].image[0].src:data[0] && data[0].image?data[0].image:""
+  if(data[0] && data[0].image[0] && data[0].image[0].src){
+    image=data[0].image[0].src
+  }
+  else if(data[0] && data[0].image){ 
+    image=data[0].image;
+
+  }
+  
   const navbar=nav_config;
   return (
     // <div className="Layout">
