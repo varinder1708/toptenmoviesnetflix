@@ -17,16 +17,16 @@ import "./Heading.scss";
 const Layout = props => {
   const appTitle = `VAR`;
   
-  const {layout="",heading,showsidebar="true",canonical,keywords,data}=props.data;
+  const {layout="",heading,showsidebar="true",canonical,keywords}=props.data;
   
   let image="";
-  if(data[0] && data[0].image[0] && data[0].image[0].src){
-    image=data[0].image[0].src
-  }
-  else if(data[0] && data[0].image){ 
-    image=data[0].image;
+  // if(data[0] && data[0].image[0] && data[0].image[0].src){
+  //   image=data[0].image[0].src
+  // }
+  // else if(data[0] && data[0].image){ 
+  //   image=data[0].image;
 
-  }
+  // }
   
   const navbar=nav_config;
   return (
