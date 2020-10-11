@@ -1,7 +1,6 @@
 // import fs from 'fs' import path from 'path'
 import Head from 'next/head'
 import Link from "next/link";
-
 import * as data from 'data/himachal/things-to-do-in-dalhousie';
 import Layout from "components/Layout";
 import Heading from "components/Heading";
