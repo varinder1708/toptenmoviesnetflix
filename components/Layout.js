@@ -18,6 +18,7 @@ const Layout = props => {
   const appTitle = `VAR`;
   
   const {layout="",heading,showsidebar="true",canonical,keywords,data}=props.data;
+  
   let image="";
   if(data[0] && data[0].image[0] && data[0].image[0].src){
     image=data[0].image[0].src
@@ -79,8 +80,8 @@ const Layout = props => {
 
 
 
-{image!="" && (<meta content={`${site}/images/${image}`} property="og:image"/>
-)}
+<meta content={`${site}/images/${image}`} property="og:image"/>
+
 
 
 {canonical && (<link rel="canonical" href={canonical} />
