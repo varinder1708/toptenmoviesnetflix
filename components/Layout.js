@@ -76,7 +76,6 @@ const Layout = props => {
 <meta content={`${heading}`} property="og:description"/>
 <meta content="Trishn" property="og:site_name"/>
 <meta content="website" property="og:type"/>
-<meta content="test" property="og:test"/>
 <meta content={`${site}/images/${image}`} property="og:image"/>
 <meta content={`${canonical}`} property="og:url"/>
 
