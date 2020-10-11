@@ -6,7 +6,7 @@ export const data = [
   {
     "link": "",
     "name": "Goa",
-    "image": "travel/hippie-destinations-india/goa.jpg",
+    "image":[{name:'',src:"travel/hippie-destinations-india/goa2.jpg"},{name:'',src:"travel/hippie-destinations-india/goa.jpg"}] ,
     "desc": 'Goa has everything to offer when it comes to being one of the top Hippie Places ' +
         'In India.<br/>It is a far cry from the hippie haven or a beach getaway, and one ' +
         'of the only few destinations that is open 24x7. The laid-backness (susegad) of G' +
