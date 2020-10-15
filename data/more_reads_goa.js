@@ -1,11 +1,11 @@
 export const data = [
   {
-    "name": "Things to do in Dalhousie",
-    "image": "himachal/dalhousie/khajjar4.jpg",
+    "name": "Things to do in Kasol",
+    "image": "himachal/kasol/kheerganga.jpg",
     "desc": "",
-    "link": "/travel/himachal/dalhousie/things-to-do-in-dalhousie",
+    "link": "/travel/himachal/kasol/things-to-do-in-kasol",
     "desc": "",
-    'id': 'things-to-do-in-dalhousie'
+    'id': 'things-to-do-in-kasol'
   },
   {
     "name": "Top 10 Beaches in goa",
