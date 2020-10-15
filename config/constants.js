@@ -26,6 +26,11 @@ export const nav_config = {
         label: "Things to do in Dalhousie",
         path: "/travel/himachal/dalhousie/things-to-do-in-dalhousie",
         //   icon: <FontAwesomeIcon icon={faShoppingCart} />
+      },
+      , {
+        label: "Things to do in Kasol",
+        path: "/travel/himachal/kasol/things-to-do-in-kasol",
+        //   icon: <FontAwesomeIcon icon={faShoppingCart} />
       }
       // {   label: "Profile",   path: "/profile",   icon: <FontAwesomeIcon
       // icon={faUser} /> }
