@@ -64,6 +64,10 @@ ul {
                 display: flex;
                 justify-content: center;
             }
+            &.desc
+            {
+                margin-top: 10px;
+            }
 
         }
         p {

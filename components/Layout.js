@@ -1,6 +1,7 @@
 
 import Head from "next/head";
 import Header from "./Header";
+import Footer from "./Footer";
 import SideBar from "./SideBar";
 import {nav_config} from "config/constants";
 import Share from "./Share";
@@ -111,11 +112,8 @@ const Layout = props => {
         
 
     </div>
-    <footer className="footer">
-    <div itemscope="itemscope" itemtype="http://schema.org/WebSite">
-    <link itemprop="url" href={`${site}`}/>
-  </div>
-    </footer>
+    <Footer/>
+    
 </main>
   );
 };
