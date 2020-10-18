@@ -1,5 +1,13 @@
 export const data = [
   {
+    "name": "13 best hill stations in Himachal",
+    "image": "himachal/shimla/shimla.jpg",
+    "desc": "",
+    "link": "/travel/himachal/hill-stations-in-himachal",
+    "desc": "",
+    'id': 'hill-stations-in-himachal'
+  },
+  {
     "name": "Things to do in Kasol",
     "image": "himachal/kasol/kheerganga.jpg",
     "desc": "",

@@ -3,6 +3,11 @@ export const nav_config = {
     'showmenu': true,
     navButtons : [
       {
+        label: "13 Best Hill Stations in Himachal",
+        path: "/travel/himachal/hill-stations-in-himachal",
+        //   icon: <FontAwesomeIcon icon={faCompass} />
+      },
+      {
         label: "Waterfalls in Goa",
         path: "/travel/goa/waterfalls-in-goa",
         //   icon: <FontAwesomeIcon icon={faCompass} />
