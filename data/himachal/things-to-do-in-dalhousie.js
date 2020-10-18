@@ -1,7 +1,7 @@
 import{site} from 'config/constants';
 export const canonical=`${site}/travel/himachal/dalhousie/things-to-do-in-dalhousie`;
 export const keywords = "Things to do in dalhousie, himachal pradesh,Places To Visit In Dalhousie,kalatop wildlife,khajjiar,mini switzerland of india,Panch Pulla Waterfall,dainkund peak,chamera lake";
-export const heading = "Things to do in dalhousie";
+export const heading = "Things to do in Dalhousie";
 export const data = [
   {
     "link": "",
