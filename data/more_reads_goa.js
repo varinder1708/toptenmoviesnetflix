@@ -6,9 +6,16 @@ export const data = [
     "link": "/travel/himachal/kasol/things-to-do-in-kasol",
     "desc": "",
     'id': 'things-to-do-in-kasol'
+  },{
+    "name": "Things to do in Dalhousie",
+    "image": "himachal/dalhousie/khajjar1.jpg",
+    "desc": "",
+    "link": "/travel/himachal/dalhousie/things-to-do-in-dalhousie",
+    "desc": "",
+    'id': 'things-to-do-in-dalhousie'
   },
   {
-    "name": "Top 10 Beaches in goa",
+    "name": "Top 10 Beaches in Goa",
     "image": "beaches/anjuna-beach-goa-thumb-d.jpg",
     "desc": "",
     "link": "/travel/goa/top-beaches-in-goa",
@@ -36,7 +43,7 @@ export const data = [
    "desc": "",
    'id': 'waterfalls-in-goa'
  } ,{
-   "name": "Top 25 beaches in goa",
+   "name": "Top 25 beaches in Goa",
    "image": "beacheswithdesc/Panjim_Goa.jpg",
    "desc": "",
    "link": "/travel/goa/top-goa-beaches",
