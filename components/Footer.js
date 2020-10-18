@@ -8,7 +8,6 @@ const Footer = (props) => (
       <link itemprop="url" href={`${site}`}/>
     </div> */}
     <span>TRISH</span>
-    
     <span
       class="backtotop"
       onClick={() => window.scroll({top: 0, left: 0, behavior: 'smooth'})}>BACK TO TOP</span>
