@@ -7,7 +7,7 @@ const Footer = (props) => (
     {/* <div itemscope="itemscope" itemtype="http://schema.org/WebSite">
       <link itemprop="url" href={`${site}`}/>
     </div> */}
-    <span>TRISHN</span>
+    <span>TRISH</span>
     <span
       class="backtotop"
       onClick={() => window.scroll({top: 0, left: 0, behavior: 'smooth'})}>BACK TO TOP</span>
