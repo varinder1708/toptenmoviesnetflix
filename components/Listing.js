@@ -59,9 +59,21 @@ const Listing = (props) => (
             <div class="nra">
               <strong>Nearest Railway Station</strong>: {`${post.nra}`}</div>
           )}
+          {post.nrs && (
+            <div class="nrs">
+              <strong>Nearest Railway Station</strong>: {`${post.nrs}`}</div>
+          )}
           {post.htr && (
             <div class="nra">
               <strong>How to Reach</strong>: {`${post.htr}`}</div>
+          )}
+          {post.lt && (
+            <div class="nra">
+              <strong>Local Transport</strong>: {`${post.lt}`}</div>
+          )}
+          {post.ptv && (
+            <div class="nra">
+              <strong>Places to Visit</strong>: {`${post.ptv}`}</div>
           )}
         </li>
       ))}

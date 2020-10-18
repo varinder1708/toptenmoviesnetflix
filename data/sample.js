@@ -11,7 +11,9 @@ export const data = [
     "best": "",
     "nrs": "",
     "na": "",
-    "htr": ""
+    "htr": "",
+    "ptv": "",
+    "lt": ""
   }
 
 ]
