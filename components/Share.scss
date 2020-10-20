@@ -1,3 +1,15 @@
 .share{text-align: center;}
 .share svg{margin-right: 10px;}
 .share button{outline:0}
+
+@media only screen and (min-width: 1280px) {
+.share{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    left: 47px;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+}

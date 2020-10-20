@@ -15,7 +15,7 @@ export const data = [
     "htr": ""
   },
   {
-    "link": "",
+    "link": "/travel/himachal/kasol/things-to-do-in-kasol",
     "name": "Kasol",
     "image":[ {
       "src": "himachal/kasol/kheerganga.jpg",
@@ -169,7 +169,7 @@ export const data = [
      "ptv":"Gilbert Trail, Toy Train, Majathal Sanctuary, Kathur Fort, Shoolini Temple"         
   },
   {
-    "link": "",
+    "link": "/travel/himachal/dalhousie/things-to-do-in-dalhousie",
     "name": "Dalhousie",
     "image":
       [
