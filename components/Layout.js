@@ -85,7 +85,8 @@ const Layout = props => {
 
 
     </Head>
-    <header class="header">
+    <header className={`${ isMobile ? 'mobile' : 'desktop'} ${'header'}`}>
+
     {isMobile?<span class="logo"><img src="/images/logo.png"/></span>:''}
     <Header navbar={navbar}/>
     
