@@ -28,6 +28,7 @@ strong{
     font-size: 20px;
     font-weight:650;
 }
+margin-bottom: 33px;
 }
     }
     p{
@@ -57,7 +58,7 @@ ul {
        
 		list-style-type: none;
         list-style-position: inside;
-        margin-bottom: 33px;
+      //  margin-bottom: 33px;
         div
         {&.insta
             {
@@ -112,7 +113,7 @@ ul {
     //     {
             ul{
                 li{
-                    width:100%;
+                   // width:100%;
                     img{width: 100%;}    
                 }
             }

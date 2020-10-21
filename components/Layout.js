@@ -52,7 +52,7 @@ const Layout = props => {
       
     // </div>
     
-    <main>
+    <main className={`${device}`}>
       <Head>
       <script
     async
@@ -98,6 +98,13 @@ const Layout = props => {
     <span class="logo"><img src="/images/logo.png"/></span>
     <Header navbar={navbar}/>
     </header>
+    <nav>
+      <ul>
+      <li><a href="">Hill Stations</a></li>
+      <li><a href="">Beaches</a></li>
+      </ul>
+    </nav>
+  
     {/* <section class="hero">
         Hero
         <p>

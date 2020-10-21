@@ -41,8 +41,13 @@ section {
 	padding: .8rem;
 	
 }
-
-
+.mobile{
+section{
+&.content{
+	padding-top: 3rem;
+}
+}
+}
 main {
 	background: $background;
 	padding:0;
@@ -80,3 +85,5 @@ main {
 	background: #fff;
 	border-top: 1px solid #eee;
 }
+
+

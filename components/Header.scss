@@ -22,7 +22,7 @@
   .header {
     background: #fff;
     padding:0;
-    margin-bottom: 10px;
+    //margin-bottom: 10px;
     z-index:1 ;
   }
   // @media only screen and (max-width: 600px) {
@@ -57,3 +57,16 @@
 }
     
 // }
+
+nav{
+  width:100%;
+  position: absolute;
+  margin-top:43px;
+ height: 37px;
+ @include shadow;
+}
+.desktop{
+  nav{display: none;}
+}
+nav ul{display: flex;margin:0}
+nav ul li{padding:10px 15px 4px 15px;text-align: center;}
