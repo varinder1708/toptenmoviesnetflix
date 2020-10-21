@@ -113,7 +113,7 @@ export const data = [
   {
     "link": "",
     "name": "Khajjiar",
-    "image":[{name:'',src:"himachal/khajjar/Khajjar1.jpg"}] ,
+    "image":[{name:'',src:"himachal/khajjar/khajjar1.jpg"}] ,
     "desc": 'It is very rightly termed as the ‘Mini Switzerland of India. Set against the backdrop of dense pines, deodars and lush green meadow, Khajjiar is exquisitely nestled down in the foothills of the imposing Dhauladhar ranges of the Western Himalayas.<br/>Monsoon season is not advisable because it is a hilly terrain',
     "best": "March to October",
     "nrs": "The nearest railway station is in Pathankot and then a taxi can get you to Khajjiar",
