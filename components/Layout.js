@@ -10,6 +10,7 @@ import {site} from "config/constants";
 import "./Layout.scss";
 import "./index.scss";
 import "./Heading.scss";
+import { useEffect, useState } from "react";
 
 
 
@@ -30,6 +31,13 @@ const Layout = props => {
   }
   
   const navbar=nav_config;
+
+  const [device,setDevice]=useState('');
+  useEffect(()=>{
+     setDevice(isMobile ? 'mobile' : 'desktop')
+  })
+
+
   return (
     // <div className="Layout">
     //   <Head>
@@ -85,11 +93,10 @@ const Layout = props => {
 
 
     </Head>
-    <header class={`${ isMobile ? 'mobile' : 'desktop'} ${'header'}`}>
-
-    {isMobile?<span class="logo"><img src="/images/logo.png"/></span>:''}
-    <Header navbar={navbar}/>
     
+    <header className={`${device} header`}>
+    <span class="logo"><img src="/images/logo.png"/></span>
+    <Header navbar={navbar}/>
     </header>
     {/* <section class="hero">
         Hero
