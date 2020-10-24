@@ -10,9 +10,10 @@ import TopPicks from "../../../components/TopPicks";
 import {nav_config} from "../../../config/constants";
 
 const listing = () => (
-  <Layout  data={{...data,layout:"threecolumnlayout",showsidebar:""}}>
+  // <Layout  data={{...data,layout:"threecolumnlayout",showsidebar:""}}>
+    <Layout  data={{...data,showsidebar:""}}>
     {/* <Heading title={heading}/> */}
-    <Listing   data={data.data} layout="threecolumnlayout"/>
+    <Listing   data={data.data} layout="fourcolumnlayout"/>
     <TopPicks showheading="true"    layout="threecolumnlayout"/>
     
 
