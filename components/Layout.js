@@ -19,13 +19,13 @@ import { useEffect, useState } from "react";
 const Layout = props => {
   const appTitle = `VAR`;
   
-  const {layout="",heading,showsidebar="true",canonical,keywords,data}=props.data;
+  const {layout="",heading,showsidebar="true",canonical,keywords,data,showsharing="true"}=props.data;
   
   let image="";
-  if(data[0] && data[0].image[0] && data[0].image[0].src){
+  if(data && data[0] && data[0].image[0] && data[0].image[0].src){
     image=data[0].image[0].src
   }
-  else if(data[0] && data[0].image){ 
+  else if(data && data[0] && data[0].image){ 
     image=data[0].image;
 
   }
@@ -119,7 +119,7 @@ const Layout = props => {
       {heading}
     </h1>
    
-  <Share url={canonical}/>
+  {showsharing && showsharing=="true" && (<Share url={canonical}/>)}
     
         {props.children}        
         </section>
