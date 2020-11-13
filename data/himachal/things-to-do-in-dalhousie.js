@@ -15,7 +15,7 @@ export const data = [
         "name": "panchpula"
       }
     ],
-    "desc": ' Panchpula is a waterfall and a popular picnic spot in Dalhousie. It is best known for trekking and its marvellous, cascading beauty. Five streams come together to form this waterfall, while Panchpula\'s main stream supplies water to the various localities of Dalhousie. The best time to visit this wonderful spot is in summer and monsoon as the water gushes with full force during this season and the place looks its bes'
+    "desc": 'हिन्दी न्यूज़ Panchpula is a waterfall and a popular picnic spot in Dalhousie. It is best known for trekking and its marvellous, cascading beauty. Five streams come together to form this waterfall, while Panchpula\'s main stream supplies water to the various localities of Dalhousie. The best time to visit this wonderful spot is in summer and monsoon as the water gushes with full force during this season and the place looks its bes'
   },
   {
     "link": "",
