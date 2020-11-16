@@ -1,4 +1,5 @@
-export const  site="https://trishn.com"
+//export const  site="https://trishn.com"
+export const  site="http://localhost:3000"
 export const nav_config = {
     'showmenu': true,
     navButtons : [
