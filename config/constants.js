@@ -1,5 +1,5 @@
-export const  site="https://trishn.com"
-//export const  site="http://localhost:3000"
+const isProd = process.env.NODE_ENV === 'production'
+export const  site=isProd?'https://trishn.com':'http://localhost:3000';
 export const nav_config = {
     'showmenu': true,
     navButtons : [

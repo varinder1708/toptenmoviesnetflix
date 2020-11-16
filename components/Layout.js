@@ -127,6 +127,7 @@ const Layout = props => {
         
 
     </div>
+    <div className="clearfix"></div>
     <Footer/>
     
 </main>

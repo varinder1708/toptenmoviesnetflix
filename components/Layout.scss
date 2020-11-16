@@ -40,6 +40,7 @@ section {
 	margin: 0;
 	padding: .8rem;
 	
+	
 }
 .mobile{
 section{
@@ -61,14 +62,17 @@ main {
 
 @media screen and (min-width:640px) {
 	.flex-container {
-		display: flex
+		display: flex;
 	}
+	footer{position:fixed;bottom: 0;width: 100%;}
 }
 
 .content {
 	flex: 1;
 	background:$contentbackground; 
 	line-height:26px;
+	min-height: 100vh;
+	margin-bottom: 20px;
 }
 
 .sidebar {
@@ -85,5 +89,7 @@ main {
 	background: #fff;
 	border-top: 1px solid #eee;
 }
+.clearfix{clear: both;}
+
 
 
