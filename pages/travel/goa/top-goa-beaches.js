@@ -22,7 +22,12 @@ const listing = ({data}) => (
 export async function getStaticProps(context) {
   const url='/api/location?name=25 beaches in goa';
   const res = await fetch(`${site}${url}`);
+  console.log("----------a")
+  console.log(res);
+  console.log("----------------b")
+  
   const json = await res.json();
+  
   return {
     props: {
       data: json,

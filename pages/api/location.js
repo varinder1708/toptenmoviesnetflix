@@ -15,9 +15,10 @@ handler.get(async (req, res) => {
     
     if(type=='all')
     {
-      console.log(data)
+      
       //return data;
       doc={"data":data,"name":"Top Travel Locations in May","heading":"Top Travel Locations in May","canonical":"/"};
+      //console.log(doc)
       // const pipeline = [
    
       //   { "$project": {_id:0,name:1,"image":{$arrayElemAt:["$data.image",0]}  } }
@@ -50,7 +51,7 @@ handler.get(async (req, res) => {
     doc = await req.db.collection('places').findOne({'name':name},{ projection: { _id: 0}})
     //console.log(doc);  
   }
-    console.log(doc);
+    //console.log(doc);
     res.json(doc);
 });
 

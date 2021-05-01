@@ -127,6 +127,9 @@ const listing = ({data}) => (
 export async function getStaticProps(context) {
   const url='/api/location?type=all';
   const res = await fetch(`${site}${url}`);
+  console.log("----------a")
+  console.log(res);
+  console.log("----------------b")
   const json = await res.json();
   //console.log(json);
   //console.log("aaaaaaaa")
