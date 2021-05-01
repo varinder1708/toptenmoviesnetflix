@@ -17,7 +17,7 @@ handler.get(async (req, res) => {
     {
       console.log(data)
       //return data;
-      doc={"data":data,"heading":"Top Travel Locations in May","canonical":"/"};
+      doc={"data":data,"name":"Top Travel Locations in May","heading":"Top Travel Locations in May","canonical":"/"};
       // const pipeline = [
    
       //   { "$project": {_id:0,name:1,"image":{$arrayElemAt:["$data.image",0]}  } }
