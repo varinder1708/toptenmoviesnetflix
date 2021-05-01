@@ -47,7 +47,7 @@ handler.get(async (req, res) => {
     })    
     }
     else{
-    doc = await req.db.collection('places').findOne({'name':name})
+    doc = await req.db.collection('places').findOne({'name':name},{ projection: { _id: 0}})
     //console.log(doc);  
   }
     console.log(doc);
