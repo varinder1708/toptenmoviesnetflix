@@ -7,7 +7,8 @@ const handler = nextConnect();
 handler.use(middleware);
 
 handler.get(async (req, res) => {
-    const { name,type } = req.query;
+  console.log(req.query)  
+  const { name,type } = req.query;
     //console.log("********",name)
     //console.log("******",type)
     let doc;
@@ -49,7 +50,7 @@ handler.get(async (req, res) => {
     doc = await req.db.collection('places').findOne({'name':name})
     //console.log(doc);  
   }
-    //console.log(doc);
+    console.log(doc);
     res.json(doc);
 });
 
