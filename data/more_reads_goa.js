@@ -29,21 +29,23 @@ export const data = [
     "link": "/travel/goa/top-beaches-in-goa",
     "desc": "",
     'id': 'top-beaches-in-goa'
-  },{
-    "name": "Top Food Bloggers in India",
-    "image": "food/top_food_bloggers.png",
-    "desc": "",
-    "link": "/food/top-food-bloggers-in-india",
-    "desc": "",
-    'id': 'top-food-bloggers-in-india'
-  }, {
-   "name": "Upcoming Movies in Netflix",
-   "image": "net.jpg",
-   "desc": "",
-   "link": "/netflix/upcoming-movies-netflix",
-   "desc": "",
-   'id': 'upcoming-movies-netflix'
- }, {
+  }
+//   ,{
+//     "name": "Top Food Bloggers in India",
+//     "image": "food/top_food_bloggers.png",
+//     "desc": "",
+//     "link": "/food/top-food-bloggers-in-india",
+//     "desc": "",
+//     'id': 'top-food-bloggers-in-india'
+//   }, {
+//    "name": "Upcoming Movies in Netflix",
+//    "image": "net.jpg",
+//    "desc": "",
+//    "link": "/netflix/upcoming-movies-netflix",
+//    "desc": "",
+//    'id': 'upcoming-movies-netflix'
+//  }
+ , {
    "name": "Waterfalls in goa",
    "image": "waterfalls/dudhsagar_falls.jpg",
    "desc": "",

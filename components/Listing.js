@@ -9,7 +9,7 @@ const Listing = (props) => (
       .data
       .map((post, i) => (
         <li>
-          {post.name && (
+          {post.name && props.layout!="homelayout" && (
             <h3>
               {post.link
                 ? <Link href={post.link}>
@@ -24,12 +24,22 @@ const Listing = (props) => (
             <LoadCarousel data={post.image}/>
            
           )}
+           
            {post.image && (!Array.isArray(post.image)) && (
             <p class="img">
               <LazyImage src={`/images/${post.image}`} alt={post.name}/> {/* <img src={`/images/${post.image}`}/> */}
             </p>
           )}
-
+            {post.name && props.layout=="homelayout" && (
+             <h3>
+             {post.link
+               ? <Link href={post.link}>
+                   <a>{post.name}</a>
+                 </Link>
+               : `${i + 1}. ${post.name}`}
+             {/* {i + 1}.{post.name} */}
+           </h3>
+           )}
           {post.i && (
             <div
               class="insta"

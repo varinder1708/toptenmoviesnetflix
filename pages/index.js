@@ -118,17 +118,18 @@ import TopPicks from "components/TopPicks";
   // }
 
 const listing = ({data}) => (
-  <Layout    data={{...data}}>
+  <Layout    data={{...data,showsidebar:""}}>
     {/* <Heading title={heading}/> */}
-    <Listing  layout=""  data={data.data}/>
+    <Listing  layout="homelayout"  data={data.data} />
     {/* <TopPicks    layout="threecolumnlayout"/> */}
   </Layout>
 );
-
 export async function getStaticProps(context) {
-  const url='/api/location?name=dalhousie';
+  const url='/api/location?type=all';
   const res = await fetch(`${site}${url}`);
   const json = await res.json();
+  //console.log(json);
+  //console.log("aaaaaaaa")
   return {
     props: {
       data: json,

@@ -1,5 +1,6 @@
 
 import Head from "next/head";
+import Link from "next/link";
 import Header from "./Header";
 import Footer from "./Footer";
 import SideBar from "./SideBar";
@@ -11,6 +12,7 @@ import "./Layout.scss";
 import "./index.scss";
 import "./Heading.scss";
 import { useEffect, useState } from "react";
+
 
 
 
@@ -95,15 +97,23 @@ const Layout = props => {
     </Head>
     
     <header className={`${device} header`}>
-    <span class="logo"><img src="/images/logo.png"/></span>
+    
+    <span class="logo">
+    <Link href="/">
+      <a>
+      <img src="/images/logo.png"/>
+      </a>
+    </Link>
+    </span>
+    
     <Header navbar={navbar}/>
     </header>
-    <nav>
+    {/* <nav>
       <ul>
       <li><a href="">Hill Stations</a></li>
       <li><a href="">Beaches</a></li>
       </ul>
-    </nav>
+    </nav> */}
   
     {/* <section class="hero">
         Hero

@@ -11,7 +11,7 @@ import {nav_config} from "config/constants";
 
 const listing = ({data}) => (
   // <Layout  data={{...data,layout:"threecolumnlayout",showsidebar:""}}>
-    <Layout  data={{...data}}>
+    <Layout  data={{...data,showsidebar:""}}>
     {/* <Heading title={heading}/> */}
     <Listing   data={data} layout="fourcolumnlayout"/>
     
