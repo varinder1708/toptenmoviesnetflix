@@ -15,7 +15,6 @@ handler.get(async (req, res) => {
     
     if(type=='all')
     {
-      
       //return data;
       doc={"data":data,"name":"Top Travel Locations in May","heading":"Top Travel Locations in May","canonical":"/"};
       //console.log(doc)
