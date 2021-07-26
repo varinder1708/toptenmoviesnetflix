@@ -18,8 +18,8 @@ const listing = ({data}) => (
 );
 export async function getStaticProps(context) {
   const url='/api/location?name=13 hill stations in himachal';
-  //const res = await fetch(`${site}${url}`);
-  const res = await fetch(`${url}`);
+  const res = await fetch(`${site}${url}`);
+  //const res = await fetch(`${url}`);
   
   const json = await res.json();
   return {

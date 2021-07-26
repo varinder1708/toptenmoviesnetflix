@@ -21,8 +21,8 @@ const listing = ({data}) => (
 );
 export async function getStaticProps(context) {
   const url='/api/location?name=top beaches in goa';
-  //console.log(`${site}${url}`)
-  const res = await fetch(`${url}`);
+  console.log(`${site}${url}`)
+  const res = await fetch(`${site}${url}`);
   const json = await res.json();
   return {
     props: {

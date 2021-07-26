@@ -18,10 +18,10 @@ const listing = ({data}) => (
 );
 export async function getStaticProps(context) {
   const url='/api/location?name=things to do in kasol';
-  //const res = await fetch(`${site}${url}`);
-  const res = await fetch(`${url}`);
+  const res = await fetch(`${site}${url}`);
+  //const res = await fetch(`${url}`);
   
-  //const json = await res.json();
+  const json = await res.json();
   return {
     props: {
       data: json,
