@@ -19,6 +19,7 @@ const listing = ({data}) => (
 export async function getStaticProps(context) {
   const url='/api/location?name=most beautiful beaches in thailand';
   const res = await fetch(`${site}${url}`);
+  
   const json = await res.json();
   return {
     props: {
