@@ -21,7 +21,7 @@ const listing = ({data}) => (
 );
 export async function getStaticProps(context) {
   const url='/api/location?name=beach&type=tag';
-  const res = await fetch(`${site}${url}`);
+  const res = await fetch(`${url}`);
   const json = await res.json();
   return {
     props: {
