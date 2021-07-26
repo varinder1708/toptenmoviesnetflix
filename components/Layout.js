@@ -101,7 +101,7 @@ const Layout = props => {
     <span class="logo">
     <Link href="/">
       <a>
-      <img src="/images/logo.png"/>
+      <img alt="travel" src="/images/logo.png"/>
       </a>
     </Link>
     </span>

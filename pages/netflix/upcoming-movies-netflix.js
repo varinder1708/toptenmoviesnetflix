@@ -9,6 +9,7 @@ import Listing from "../../components/Listing";
 import {nav_config} from "config/constants";
 
 
+
 const listing = () => (
   <Layout data={data}>
     {/* <Heading title={heading}/> */}
