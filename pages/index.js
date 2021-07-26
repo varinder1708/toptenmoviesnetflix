@@ -126,7 +126,7 @@ const listing = ({data}) => (
 );
 export async function getStaticProps(context) {
   const url='/api/location?type=all';
-  const res = await fetch(`${site}${url}`);
+  const res = await fetch(`${url}`);
   console.log("----------a")
   console.log(res);
   console.log("----------------b")
