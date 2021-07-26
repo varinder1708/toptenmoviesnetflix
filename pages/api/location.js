@@ -16,7 +16,7 @@ handler.get(async (req, res) => {
     if(type=='all')
     {
       //return data;
-      doc={"data":data,"name":"Top Travel Locations in May","heading":"Top Travel Locations in May","canonical":"/"};
+      doc={"data":data,"name":"Top Travel Locations in May","heading":"Top Travel Locations in July","canonical":"/"};
       //console.log(doc)
       // const pipeline = [
    
@@ -35,7 +35,7 @@ handler.get(async (req, res) => {
       //     type: 1,
       //     "_id": 0
       // }}]))     
-        console.log("-------------------------------------") 
+       // console.log("-------------------------------------") 
     }
     else if(type=='tag')
     {
