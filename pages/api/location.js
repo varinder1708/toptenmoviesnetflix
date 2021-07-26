@@ -16,7 +16,7 @@ handler.get(async (req, res) => {
     if(type=='all')
     {
       //return data;
-      doc={"data":data,"name":"Top Travel Locations in May","heading":"Top Travel Locations in July","canonical":"/"};
+      doc={"data":data,"name":"Top Travel Locations in July","heading":"Top Travel Locations in July","canonical":"/"};
       //console.log(doc)
       // const pipeline = [
    
