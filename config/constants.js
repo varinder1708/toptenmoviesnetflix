@@ -1,7 +1,7 @@
 const isProd = process.env.NODE_ENV === 'production'
 //export const  site=isProd?'https://trishn.com':'http://localhost:3000';
 //export const  site=isProd?'https://toptenmoviesnetflix.vercel.app/':'http://localhost:3000';
-export const  site=isProd?'https://placestotravelinindia.com/':'http://localhost:3000';
+export const  site=isProd?'https://placestotravelinindia.com':'http://localhost:3000';
 export const nav_config = {
     'showmenu': true,
     navButtons : [
