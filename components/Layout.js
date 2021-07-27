@@ -21,7 +21,7 @@ import { useEffect, useState } from "react";
 const Layout = props => {
   const appTitle = `VAR`;
   
-  const {layout="",heading,showsidebar="true",canonical,keywords,data,showsharing="true"}=props.data;
+  const {layout="",heading,showsidebar="true",description,canonical,keywords,data,showsharing="true"}=props.data;
   
   let image="";
   if(data && data[0] && data[0].image[0] && data[0].image[0].src){
@@ -80,7 +80,7 @@ const Layout = props => {
 <meta name="Last-Modified" content="Monday, 10 Oct, 2020 07:15:29AM"/>
 <meta name="Last-Modified-Date" content="Mon, Oct 10, 2020"/>
 <meta name="Last-Modified-Time" content="07.15AM IST"/>
-<meta content={`${heading}`} name="description"/>
+<meta content={`${description}`} name="description"/>
 
 <meta content={keywords?keywords:heading} name="keywords"/>
 <meta content={`${heading}`} property="og:title"/>
