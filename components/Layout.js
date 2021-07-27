@@ -58,7 +58,7 @@ const Layout = props => {
       <Head>
       <script
     async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-170166482-1" >
+    src="https://www.googletagmanager.com/gtag/js?id=G-XG170JR6E7" >
 
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -67,7 +67,7 @@ const Layout = props => {
         window.dataLayer = window.dataLayer || [];
         function gtag(){window.dataLayer.push(arguments)}
         gtag("js", new Date());
-        gtag("config", "UA-170166482-1");
+        gtag("config", "G-XG170JR6E7");
     `}
 }>
 </script>
