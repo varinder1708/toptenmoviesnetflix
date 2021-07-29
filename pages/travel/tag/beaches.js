@@ -2,6 +2,7 @@
 import Head from 'next/head'
 // import * as data from '../../../data/goabeaches';
 import{site} from 'config/constants';
+import { apicall } from 'utils/fixSidebar';
 import Link from "next/link";
 import Layout from "components/Layout";
 import Heading from "components/Heading";
@@ -20,17 +21,8 @@ const listing = ({data}) => (
   </Layout>
 );
 export async function getStaticProps(context) {
-  const url='/api/location?name=beach&type=tag';
-  const res = await fetch(`${site}${url}`);
-  
-  //const res = await fetch(`${url}`);
-  const json = await res.json();
-  //const json=await [{"name":"top beaches in goa"},{"name":"25 beaches in goa"},{"name":"most beautiful beaches in thailand"}]
-  return {
-    props: {
-      data: json,
-    },
-  };
+  const query='/api/location?name=beach&type=tag';
+  return await apicall(query);
 }
 
 export default listing

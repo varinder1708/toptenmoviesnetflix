@@ -1,3 +1,15 @@
+import{site} from 'config/constants';
+
+export async function apicall(url)
+ {
+    const res = await fetch(`${site}${url}`);
+    const json = await res.json();
+    return {
+      props: {
+        data: json,
+      },
+    };
+ }
  export  function fixSidebar(id) {
     var e = $(id);
     var lastScrollTop = 0;
