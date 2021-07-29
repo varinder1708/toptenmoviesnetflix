@@ -9,6 +9,23 @@ import Heading from "components/Heading";
 import Listing from "components/Listing";
 import TopPicks from "components/TopPicks";
 
+
+const listing = ({data}) => (
+  <Layout    data={{...data,showsidebar:""}}>
+    {/* <Heading title={heading}/> */}
+    <Listing  layout="homelayout"  data={data.data} />
+    {/* <TopPicks    layout="threecolumnlayout"/> */}
+  </Layout>
+);
+export async function getStaticProps(context) {
+  const query='/api/location?type=all';
+  return await apicall(query);
+}
+
+export default listing
+
+
+
   // const data={
   // canonical:`/travel/himachal/dalhousie/things-to-do-in-dalhousie`,
   // keywords : "Things to do in dalhousie, himachal pradesh, Places To Visit In Dalhousie,kalatop wildlife,khajjiar,mini switzerland of india,Panch Pulla Waterfall,dainkund peak,chamera lake",
@@ -117,17 +134,3 @@ import TopPicks from "components/TopPicks";
   //   }
   // ]
   // }
-
-const listing = ({data}) => (
-  <Layout    data={{...data,showsidebar:""}}>
-    {/* <Heading title={heading}/> */}
-    <Listing  layout="homelayout"  data={data.data} />
-    {/* <TopPicks    layout="threecolumnlayout"/> */}
-  </Layout>
-);
-export async function getStaticProps(context) {
-  const query='/api/location?type=all';
-  return await apicall(query);
-}
-
-export default listing
