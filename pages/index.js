@@ -127,8 +127,7 @@ const listing = ({data}) => (
 );
 export async function getStaticProps(context) {
   const query='/api/location?type=all';
-  const url = `${site}${query}`
-  return await apicall(url);
+  return await apicall(query);
 }
 
 export default listing
