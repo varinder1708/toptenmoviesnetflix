@@ -58,7 +58,7 @@ const Listing = (props) => (
               {post.type}({post.date})
             </p>
           )}
-          {post.desc && (
+          {post && post.desc && (
             <div
               class="desc"
               dangerouslySetInnerHTML={{
