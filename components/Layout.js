@@ -129,7 +129,7 @@ const Layout = props => {
       {heading}
     </h1>
    
-  {showsharing && showsharing=="true" && (<Share url={canonical}/>)}
+  {showsharing && showsharing=="true" && (<Share url={`${site}${canonical}`}/>)}
     
         {props.children}        
         </section>
