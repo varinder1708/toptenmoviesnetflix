@@ -1,15 +1,13 @@
 import "./Show.scss";
 const Show = (props) => {
-  return (
-    props &&
-    props.data &&
-    props.data.desc && (
+  if (props && props.data && props.data.desc) {
+    return (
       <div
         dangerouslySetInnerHTML={{
           __html: props.data.desc,
         }}
       ></div>
-    )
-  );
+    );
+  } else return null;
 };
 export default Show;
