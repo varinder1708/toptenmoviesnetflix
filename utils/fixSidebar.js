@@ -1,7 +1,7 @@
 import { site } from "config/constants";
 
 export async function apicall(url) {
-  const res = await fetch(`${site}${url}`);
+  const res = await fetch(`${site}${url}aa`);
   let json = {
     description: "",
     name: "",
@@ -27,28 +27,7 @@ export async function apicall(url) {
   try {
     json = await res.json();
   } catch (e) {
-    json = {
-      description: "",
-      name: "",
-      state: "",
-      canonical: "",
-      keywords: "",
-      heading: "",
-      type: "",
-      data: [
-        {
-          link: "",
-          name: "",
-          image: [
-            {
-              src: "",
-              name: "",
-            },
-          ],
-          desc: "",
-        },
-      ],
-    };
+    return { props: { data: "" } };
   }
   return {
     props: {
