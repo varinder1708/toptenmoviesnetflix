@@ -1,5 +1,13 @@
 export const data = [
   {
+    "name": "Things to do in Pachmarhi",
+    "image": "madhyapradesh/pachmarhi/handikoh2.jpg",
+    "desc": "",
+    "link": "/travel/madhya-pradesh/pachmarhi/things-to-do-in-pachmarhi",
+    "desc": "",
+    'id': 'things-to-do-in-pachmarhi'
+  },
+  {
     "name": "13 best hill stations in Himachal",
     "image": "himachal/shimla/shimla.jpg",
     "desc": "",
