@@ -26,7 +26,30 @@ export async function apicall(url) {
   };
   try {
     json = await res.json();
-  } catch (e) {}
+  } catch (e) {
+    json = {
+      description: "",
+      name: "",
+      state: "",
+      canonical: "",
+      keywords: "",
+      heading: "",
+      type: "",
+      data: [
+        {
+          link: "",
+          name: "",
+          image: [
+            {
+              src: "",
+              name: "",
+            },
+          ],
+          desc: "",
+        },
+      ],
+    };
+  }
   return {
     props: {
       data: json,
