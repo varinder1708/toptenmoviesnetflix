@@ -1,7 +1,7 @@
 import { site } from "config/constants";
 
 export async function apicall(url) {
-  const res = await fetch(`${site}${url}aa`);
+  const res = await fetch(`${site}${url}`);
   let json = {
     description: "",
     name: "",
