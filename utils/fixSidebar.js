@@ -1,9 +1,29 @@
 import { site } from "config/constants";
 
 export async function apicall(url) {
-  console.log("bbbbbbbb");
   const res = await fetch(`${site}${url}`);
-  let json = {};
+  let json = {
+    description: "",
+    name: "",
+    state: "",
+    canonical: "",
+    keywords: "",
+    heading: "",
+    type: "",
+    data: [
+      {
+        link: "",
+        name: "",
+        image: [
+          {
+            src: "",
+            name: "",
+          },
+        ],
+        desc: "",
+      },
+    ],
+  };
   try {
     json = await res.json();
   } catch (e) {}
