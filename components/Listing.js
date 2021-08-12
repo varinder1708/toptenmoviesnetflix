@@ -85,6 +85,14 @@ const Listing = (props) => (
             <div class="nra">
               <strong>Places to Visit</strong>: {`${post.ptv}`}</div>
           )}
+          {post.ef && (
+            <div class="nra">
+              <strong>Entry Free</strong>: {`${post.ef}`}</div>
+          )}
+          {post.tm && (
+            <div class="nra">
+              <strong>Timings</strong>: {`${post.tm}`}</div>
+          )}
         </li>
       ))}
   </ul>
