@@ -16,6 +16,7 @@ const listing = ({ data }) => (
     {/* <TopPicks    layout="threecolumnlayout"/> */}
   </Layout>
 );
+
 export async function getStaticProps(context) {
   const query = "/api/location?name=things to do in pachmarhi";
   return await apicall(query);
