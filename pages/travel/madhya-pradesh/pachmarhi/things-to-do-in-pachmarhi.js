@@ -19,6 +19,7 @@ const listing = ({ data }) => (
 
 export async function getStaticProps(context) {
   const query = "/api/location?name=things to do in pachmarhi";
+
   return await apicall(query);
 }
 
