@@ -64,7 +64,7 @@ main {
 	.flex-container {
 		display: flex;
 	}
-	footer{position:fixed;bottom: 0;width: 100%;}
+	footer{position:fixed;bottom: 0;right:0;}
 }
 
 .content {
@@ -87,7 +87,7 @@ main {
 
 .footer {
 	background: #fff;
-	border-top: 1px solid #eee;
+	//border-top: 1px solid #eee;
 }
 .clearfix{clear: both;}
 
