@@ -71,7 +71,11 @@ const Listing = (props) => (
               <strong>Best Time to Visit</strong>: {`${post.best}`}
             </div>
           )}
-
+         {post.att && (
+            <div class="na">
+              <strong>Attractions</strong>: {`${post.att}`}
+            </div>
+          )}
           {post.na && (
             <div class="na">
               <strong>Nearest Airport</strong>: {`${post.na}`}
