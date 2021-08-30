@@ -71,7 +71,7 @@ export const data = [
    "name": "Top 25 beaches in Goa",
    "image": "beacheswithdesc/Panjim_Goa.jpg",
    "desc": "",
-   "link": "",
+   "link": "/travel/goa/top-goa-beaches",
    "desc": "",
    'id': 'top-beaches-in-goa'
  },{
