@@ -1,5 +1,12 @@
 export const data = [
   {
+    "name": "Things to do in Kerala",
+    "image": "kerala/wayanad/1.jpg",
+    "desc": "",
+    "link": "/travel/kerala/top-tourists-places-in-kerala",
+    "desc": "",
+    'id': 'top-tourists-places-in-kerala'
+  },{
     "name": "Things to do in Pachmarhi",
     "image": "madhyapradesh/pachmarhi/handikoh2.jpg",
     "desc": "",
@@ -64,7 +71,7 @@ export const data = [
    "name": "Top 25 beaches in Goa",
    "image": "beacheswithdesc/Panjim_Goa.jpg",
    "desc": "",
-   "link": "/travel/goa/top-goa-beaches",
+   "link": "",
    "desc": "",
    'id': 'top-beaches-in-goa'
  },{
