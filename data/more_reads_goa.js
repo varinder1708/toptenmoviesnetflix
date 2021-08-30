@@ -1,6 +1,6 @@
 export const data = [
   {
-    "name": "Things to do in Kerala",
+    "name": "Top Tourist Places in Kerala",
     "image": "kerala/wayanad/1.jpg",
     "desc": "",
     "link": "/travel/kerala/top-tourists-places-in-kerala",
