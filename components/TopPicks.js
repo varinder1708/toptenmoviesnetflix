@@ -12,6 +12,7 @@ const TopPicks = (props) => (
         <span>Related Articles</span>
       </div>
     )}{" "}
+   
     <ul class={`${props.layout} roundimages`}>
       {" "}
       {data.map((post, i) => (
