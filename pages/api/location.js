@@ -16,7 +16,7 @@ handler.get(async (req, res) => {
     if(type=='all')
     {
       //return data;
-      doc={"data":data,"name":"Top Travel Locations in November","heading":"Top Travel Locations in November","description":"Top Travel Locations ,tourism information, how to reach visit or reach type articles and more at places to travel in india","canonical":"/"};
+      doc={"data":data,"name":"Top Travel Locations in December","heading":"Top Travel Locations in December","description":"Top Travel Locations ,tourism information, how to reach visit or reach type articles and more at places to travel in india","canonical":"/"};
       //console.log(doc)
       // const pipeline = [
    
